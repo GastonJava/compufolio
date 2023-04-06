@@ -1,0 +1,145 @@
+@import "_paletaobscura";
+@import "_paletaaplicacion";
+@import "_variablehovercard";
+
+.container-fluid {
+  height: 83vh;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background: $c_barra;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.grid-container {
+  height: 95%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1.3fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "sidebar top1 top2 top3"
+    "sidebar main main main"
+    "sidebar main main main"
+  ;
+}
+
+/* tamanio del la imagenes */
+.imgcontainer {
+  width: 100%;
+  img {
+    position: relative;
+    object-fit: fill;
+    width: 100%;
+    max-height: 200px;
+    opacity: 0.7;
+    filter: blur(4px);
+  }
+  .txtreg {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+  }
+  .txtbuscar {
+    position: absolute;
+    top: 150px;
+    left: 630px;
+  }
+  .txtfiltrar {
+    position: absolute;
+    top: 150px;
+    left: 940px;
+  }
+}
+
+/* COLOR DE CUADROS TOP */
+.top1,
+.top2,
+.top3 {
+  background: $c_fondoform;
+  h3 {
+    font-size: 25px;
+  }
+
+  a {
+    color: $c_barra;
+    text-decoration: none;
+    cursor: grab;
+  }
+}
+/* COLOR DE CUADROS  */
+
+.top1 {
+  grid-area: top1;
+}
+.top2 {
+  grid-area: top2;
+}
+.top3 {
+  grid-area: top3;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: $c_barra;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main {
+  grid-area: main;
+  background: $c_textoform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .imgmain {
+    margin: 0 auto;
+    height: 98%;
+    width: 98%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: .9;
+      filter: blur(5px);
+    }
+    .form{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      
+      z-index: 10;
+      /* left: calc(100% - 90%); */
+      /* left: 90px; */
+
+      
+    }
+  }
+}
+ 
+/* sidebar */
+.sidebar {
+  background-color: $c_fondoform;
+  .circle-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+.container-fluid {
+  background-color: green;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}

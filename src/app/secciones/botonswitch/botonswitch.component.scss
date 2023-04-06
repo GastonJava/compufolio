@@ -1,0 +1,123 @@
+
+//@at-root BOTON SWITCH
+.switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    padding: 5px;
+    z-index: 9999;
+    color: #435357;
+    border-radius: 1px 1px 10px 10px;
+    height: 60px;
+    right: 10px;
+    background: #2c3b73;
+
+    i {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .switch:hover {
+    color: antiquewhite;
+  }
+
+  //@extend VIDEO BACKGROUND
+  video {
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    /*  mix-blend-mode: overlay;
+    will-change: opacity; */
+    opacity: 0.3;
+  }
+  
+  .position_fixed {
+    position: fixed;
+  }
+  
+  .position_absolute {
+    position: absolute;
+  }
+
+  .background_video {
+    background: #1c1c3c61;
+    transition: background-color 2900ms linear;
+  }
+
+  .background_novideo {
+    //background: #252E42;
+    background-color: #000;
+    transition: background-color 2900ms linear;
+
+    //background-image: url("src/assets/nuevohero/keyword.jpg");
+    background-image: url("/assets/nuevohero/fondohero5.png");
+    background-size: cover;
+    //background-color: #cccc;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    opacity: 0.8;
+    //z-index: 10;
+  }
+
+  .card_video {
+    background: #2d415a45;
+    transition: background-color 2700ms linear;
+  }
+
+  .card_novideo {
+    background: transparent;
+    transition: background-color 2700ms linear;
+  }
+
+  //responsive
+  @media screen and (max-width: 1920px) {
+    .switch {
+      right: 350px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .switch {
+      right: 150px;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    .switch {
+      right: 130px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .switch {
+      right: 90px;
+    }
+  }
+
+  @media screen and (max-width: 779px) {
+    .switch {
+      right: 100px;
+    }
+  }
+
+  @media screen and (max-width: 537px) {
+    .switch {
+      right: 40px;
+    }
+  }
+
+  @media screen and (max-width: 322px) {
+    .switch {
+      right: 30px;
+    }
+  }

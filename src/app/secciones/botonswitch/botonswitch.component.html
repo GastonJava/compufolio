@@ -1,0 +1,43 @@
+
+<!--
+<div
+  [ngClass]="isVideoBackground ? 'background_video' : 'background_novideo'"
+  class="hero__textosoverlay"
+>
+</div>
+-->
+
+<video
+  id="video"
+  #video
+  [ngClass]="isVideoBackground ? 'position_fixed' : 'position_absolute'"
+  width="100%"
+  height="100%"
+  muted
+  loop
+>
+  <source
+    #src
+    id="video_source"
+    src="assets/nuevohero/backgroundvideo_3mb_1980.webm"
+    type="video/webm"
+  />
+</video>
+
+
+<div class="switch">
+  <i
+    [ngClass]="isVideoBackground ? 'fa-video-slash' : 'fa-video'"
+    class="fas"
+    (click)="cambiarToggle()"
+    (click)="playPause()"
+  ></i>
+
+  <i
+    [ngClass]="
+    isVideoBackground ? (isSunOrMoon ? 'ri-moon-fill ' : 'ri-sun-line') : ''
+    "
+    class=""
+    (click)="cambiarBdBackground()"
+  ></i>
+</div>

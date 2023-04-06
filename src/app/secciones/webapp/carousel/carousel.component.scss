@@ -1,0 +1,146 @@
+// =========================
+// Carousel
+// =========================
+
+:host {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #242b40;
+  width: 300px;
+  height: 240px;
+  max-width: 350px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+
+.carousel:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+  position: relativo;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
+  // zoom effect on hover
+  transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+  border-radius: 0.5em;
+  opacity: 1;
+  transition: 0.8s;
+
+  /*  */
+}
+
+.slide:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+// =========================
+// Next and Prev buttons
+// =========================
+.control {
+  border: none;
+  background-color: transparent;
+  outline: 0; // remove blue outline border, but make sure they are still focussable for accessibility
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  user-select: none;
+  height: 100%;
+  opacity: 80%;
+  // opacity effect on hover
+  transition: opacity 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  /* Position the buttons */
+  &.next {
+    right: 0;
+  }
+  &.prev {
+    left: 0;
+  }
+}
+
+/* style the arrows */
+.arrow {
+  display: block;
+  border-left: 0.1em solid white;
+  border-bottom: 0.1em solid white;
+  width: 0.5em;
+  height: 0.5em;
+
+  &.left {
+    transform: rotate(45deg);
+  }
+  &.right {
+    transform: rotate(225deg);
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  :host {
+    width: 200px;
+    height: 240px;
+    max-width: 300px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 537px) {
+
+  :host {
+    width: 200px;
+    height: 240px;
+    max-width: 300px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 322px) {
+
+  :host {
+    width: 180px;
+    max-width: 200px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+}

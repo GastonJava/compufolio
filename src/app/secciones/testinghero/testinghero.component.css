@@ -1,0 +1,16 @@
+.testingmain {
+  height: 100vh;
+}
+
+.testingmain .works1 {
+  background-color: yellow;
+}
+
+.testingmain .works2 {
+  background-color: green;
+}
+
+.testingmain .works3 {
+  background-color: blue;
+}
+/*# sourceMappingURL=testinghero.component.css.map */

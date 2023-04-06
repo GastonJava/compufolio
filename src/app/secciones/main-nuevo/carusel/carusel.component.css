@@ -1,0 +1,49 @@
+.caruselwrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.caruselwrapper img {
+  width: 300px;
+  height: 200px;
+}
+
+.booleanointerno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 200px;
+  width: 600px;
+  height: 250px;
+}
+
+.img__noenvia img {
+  width: 400px;
+  height: 140px;
+}
+
+.imgfromurl {
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.imgfromurl img {
+  height: 200px;
+  width: 500px;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+}
+/*# sourceMappingURL=carusel.component.css.map */

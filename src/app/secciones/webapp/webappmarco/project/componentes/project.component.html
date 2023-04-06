@@ -1,0 +1,24 @@
+<div [ngClass]="(isVideo$ | async) ? 'container-fluid_novideo' : 'container-fluid_video'" class="container-fluid contenedorprincipal">
+
+<!--   <h2 class="carouseltitle text-center">Mi Proyectos</h2> -->
+
+  <div [ngClass]="(isVideo$ | async) ? 'caruselwrapper_novideo' : 'caruselwrapper_video'" class="caruselwrapper" #over>
+
+    <div class="proyect_subtitle">
+      <p>Proyectos</p>
+
+      <h3>Coursera UX CINE' APP CASO PRACTICO</h3>
+
+    </div>
+       
+    <div class="container_carousel">
+      <app-carousel [slides]="slides"></app-carousel> 
+    </div>
+
+  </div>
+
+  <div class="wrapper" #wrapper>
+    <p #parrafo>Ir a la pagina</p>
+  </div>
+ 
+</div>

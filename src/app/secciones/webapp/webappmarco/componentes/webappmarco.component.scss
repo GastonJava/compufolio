@@ -1,0 +1,1663 @@
+@import "_paletaobscura";
+@import "_paletaaplicacion";
+
+.outlet-container {
+  height: 100%;
+  padding-top: 40px;
+  background: transparent;
+
+  .outletruta {
+    display: inline-block;
+  }
+}
+
+.btnsobre_iconbutton {
+  background: lightskyblue;
+}
+
+/* boton del menu */
+.linea {
+  width: 25px;
+  height: 3px;
+  background: lightskyblue;
+  margin: 3px;
+}
+
+::ng-deep aside {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* SIDEBARS */
+.ng-sidebar--opened.ng-sidebar--over {
+  box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.center-text {
+  text-align: center;
+}
+
+.testing_glass {
+  display: block;
+  position: absolute;
+  background: #1c1c3c61;
+  width: 100%;
+  height: 100vh;
+  transition: background-color 2200ms linear;
+}
+
+.testing_noglass {
+  display: block;
+  position: absolute;
+  background: #252e42;
+  width: 100%;
+  height: 100vh;
+  transition: background-color 2200ms linear;
+  background-image: url("/assets/nuevohero/fondohero5.png");
+  opacity: 0.85;
+  animation: fadeIn 8s;
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0};
+  100% {opacity: 1;}
+}
+
+.container-fluid {
+  height: 90vh;
+  padding: 30px;
+}
+
+.alt1 {
+  height: calc(100vh - 160px);
+
+  .alturaform_video {
+    background: transparent;
+    transition: background-color 6000ms cubic-bezier(1, 0, 0, 1);
+  }
+
+  .alturaform_novideo {
+    background: $c_interno;
+    transition: background-color 6000ms cubic-bezier(1, 0, 0, 1);
+  }
+
+  .alturasobremi {
+    overflow: hidden;
+    display: flex;
+    z-index: 100;
+    height: 100%;
+    width: 60%;
+
+    .rouleter {
+      width: 100%;
+      height: 90vh;
+    }
+  }
+
+  .ng-sidebar__content {
+    background: whitesmoke;
+  }
+
+  .cambiar {
+    background-color: black;
+  }
+
+  /* ACA VIENE LA CONFIGURACION DEL NG-SIDEBAR */
+  /* ::ng-deep aside {
+    background-color:transparent;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 98%; 
+    overflow: hidden;
+  }
+   */
+
+  ng-sidebar-container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+
+    /* ESTE CAMBIO ES PARA PRUEBA SOLAMENTE*/
+    /* width: 100%; */
+    /* ESTE CAMBIO ES PARA PRUEBA SOLAMENTE*/
+
+    /* ESTE CAMBIO ES PARA PRUEBA SOLAMENTE*/
+    /*
+    .outlet-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
+    }
+    */
+    /* ESTE CAMBIO ES PARA PRUEBA SOLAMENTE*/
+  }
+}
+
+.iconcontainer {
+  height: 8vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  i {
+    font-size: 50px;
+  }
+
+  .fa-facebook {
+    color: darkblue;
+  }
+
+  .fa-linkedin-in {
+    color: lightskyblue;
+  }
+  .fa-github {
+    color: wheat;
+  }
+}
+
+/* CONTACTO TEXTO */
+h2 {
+  color: $c_textoform;
+  font-size: 60px;
+}
+
+.form {
+  width: 60%;
+  margin: 0 auto;
+  height: calc(80vh - 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .insideform {
+    display: flex;
+    flex-direction: column; /** cambiarto */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+    width: 100%;
+    //============ display none al abrir sidebar
+    .form_open {
+      display: none !important;
+    }
+
+    .form_close {
+      display: flex !important;
+    }
+
+    .span_sun {
+      transition: color 2200ms linear;
+      color: #8000007a;
+    }
+
+    .span_moon {
+      transition: color 2200ms linear;
+      color: #ea4242a3;
+    }
+
+    span {
+      color: #8000007a;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
+
+.form-control::placeholder {
+  color: #2a689f;
+  opacity: 1;
+}
+
+.tamanioband {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}
+
+.contbarraint {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(7px);
+  background-color: rgba(0, 191, 255, 0.088);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+  z-index: 100;
+
+  h4 {
+    a {
+      position: relative;
+      display: inline-block;
+      font-weight: 800;
+      overflow: hidden;
+      color: $c_textoform;
+      font-size: clamp(0.7rem, 3vw, 1.2rem);
+      background: linear-gradient(
+        to right,
+        rgb(89, 89, 102),
+        rgb(41, 41, 66) 50%,
+        rgb(191, 206, 252) 50%
+      );
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none;
+      &:hover {
+        background-position: 0 100%;
+      }
+    }
+  }
+}
+
+.active {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+label {
+  color: $c_textoform;
+}
+
+textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(255, 255, 255, 0.01);
+  resize: none;
+}
+
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+button {
+  background-color: #0d55ac66;
+  border: 1px solid $c_textoform;
+  color: $c_textoform;
+
+  display: block;
+  padding: 10px;
+  font-size: 2em;
+}
+
+// alturra de barra de links
+.containerbtn {
+  display: flex;
+}
+
+// ================= FLECHA ARRIBA
+.flecha_esconder {
+  transition: 1s all;
+  transform: translateX(200px);
+}
+
+.flecha_mostrar { // ======= FLECHA BACKGROUND
+  transition: 1s all;
+  transform: translateX(0px);
+  background: rgba(0, 191, 255, 0.11);
+
+  i {
+    animation: MoveUpDown 1s infinite alternate;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.flecha {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 600;
+
+  i {
+    font-size: 30px;
+    color: cadetblue;
+  }
+}
+
+/* NUEVA NEDIDA */
+@media screen and (max-width: 1920px) {
+  .outlet-container {
+    height: 100%;
+    padding-top: 5px;
+    background: transparent;
+
+    .outletruta {
+      display: inline-block;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 30px;
+    width: 80%;
+    max-width: 90%;
+  }
+
+  .alt1 {
+    height: calc(100vh - 154px);
+    width: 90%;
+
+    .btnsobre_iconbutton {
+      background: lightskyblue;
+      display: none;
+    }
+    .alturaform {
+      height: 74vh;
+      border-radius: 16px;
+      box-shadow: -14px -14px 28px #081628, 14px 14px 28px #2056a0;
+      backdrop-filter: blur(12.3px);
+      -webkit-backdrop-filter: blur(12.3px);
+      border: 1px solid rgba(20, 54, 100, 0.78);
+      width: 80%;
+      max-width: 90%;
+    }
+
+    .alturasobremi {
+      overflow: hidden;
+      display: flex;
+      z-index: 100;
+      height: 100%;
+      width: 60%;
+      .rouleter {
+        width: 100%;
+        height: 90vh;
+      }
+    }
+
+    /* ACA VIENE LA CONFIGURACION DEL NG-SIDEBAR */
+    ::ng-deep aside {
+      background-color: transparent;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      width: 97%;
+      overflow: hidden;
+    }
+
+    .ng-sidebar__content {
+      background: whitesmoke;
+    }
+
+    .cambiar {
+      background-color: black;
+    }
+
+    ng-sidebar-container {
+      height: 100vh;
+      .ng-sidebar {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .iconcontainer {
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      font-size: 50px;
+    }
+
+    .fa-facebook {
+      color: darkblue;
+    }
+
+    .fa-linkedin-in {
+      color: lightskyblue;
+    }
+    .fa-github {
+      color: wheat;
+    }
+  }
+
+  .form {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    /* CONTACTO TEXTO */
+    h2 {
+      color: $c_textoform;
+      font-size: 10px;
+    }
+
+    .insideform {
+      /*
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-top: 0px;
+      padding-top: 0px;
+      width: 100%;
+      */
+      form {
+        display: flex;
+        width: 80%;
+        height: 90%;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
+
+      .blinkingred {
+        animation: 10s blink ease infinite
+      }
+
+      .blinkinggreen {
+        animation: 40s blink ease infinite
+      }
+
+      @keyframes blink {
+        from, to {
+          opacity: 0;
+        }
+        90% {
+          opacity: 1;
+        }
+      }
+    
+     
+    }
+  }
+  
+
+  .tamanioband {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+
+  .contbarraint {
+    /* background-color: violet; */
+    width: 98%;
+    height: 100px;
+  }
+
+  .active {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  label {
+    color: $c_textoform;
+  }
+
+  .containerbtn {
+    display: flex;
+  }
+
+  // flechas alturas y derecha
+  .flecha {
+    position: fixed;
+    bottom: 3rem;
+    right: 10rem;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .outlet-container {
+    height: 100%;
+    padding-top: 5px;
+    background: transparent;
+
+    .outletruta {
+      display: inline-block;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+    padding: 30px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .alt1 {
+    height: calc(100vh - 153px);
+    display: flex;
+    .btnsobre_iconbutton {
+      background: rgba(255, 255, 255, 0.05);
+      display: none;
+    }
+
+    .alturaform {
+      height: 74vh;
+    }
+
+    .alturasobremi {
+      overflow: hidden;
+      display: flex;
+      z-index: 100;
+
+      height: 100%;
+      width: 60%;
+
+      .rouleter {
+        width: 100%;
+        height: 90vh;
+      }
+    }
+
+    .ng-sidebar__content {
+      background: whitesmoke;
+    }
+
+    .cambiar {
+      background-color: black;
+    }
+
+    ng-sidebar-container {
+      height: 100vh;
+    }
+  }
+
+  .iconcontainer {
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      font-size: 50px;
+    }
+
+    .fa-facebook {
+      color: darkblue;
+    }
+
+    .fa-linkedin-in {
+      color: lightskyblue;
+    }
+    .fa-github {
+      color: wheat;
+    }
+  }
+
+  .form {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    /* CONTACTO TEXTO */
+    h2 {
+      color: $c_textoform;
+      font-size: 10px;
+    }
+
+    .insideform {
+      /*
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-top: 0px;
+      padding-top: 0px;
+      width: 100%;
+      */
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 80%;
+      }
+    }
+  }
+
+  .tamanioband {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+  .contbarraint {
+    /* background-color: red; */
+    width: 97%;
+    height: 100px;
+  }
+
+  .active {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  label {
+    color: $c_textoform;
+  }
+
+  .containerbtn {
+    display: flex;
+  }
+
+  // flechas alturas y derecha
+  .flecha {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .outlet-container {
+    height: 100%;
+    padding-top: 40px;
+    background: transparent;
+
+    .outletruta {
+      display: inline-block;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    background: transparent;
+  }
+
+  .alt1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    .btnsobre_iconbutton {
+      position: absolute;
+      z-index: 1000;
+      margin-bottom: 500px;
+      margin-left: 0;
+      color: grey;
+      font-size: 30px;
+      display: block;
+      width: 100%;
+    }
+
+    .alturaform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 250px;
+      height: 90vh;
+      width: 100%;
+      margin-right: 0;
+      max-width: 100%;
+      .form {
+        z-index: 100;
+        width: 80%;
+        min-height: 250px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .insideform {
+          /*
+          background-color: transparent;
+          height: 100vh;
+          width: 90%;
+          margin-top: 20px;
+          padding-top: 10px;
+          */
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 80%;
+          }
+
+          h2 {
+            font-size: 3vh;
+          }
+
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .alturasobremi {
+      background-color: transparent;
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      display: block;
+      z-index: 100;
+      height: 90%;
+      width: 100%;
+      .rouleter {
+        width: 100%;
+      }
+    }
+
+    .clasesidebar_container {
+      background-color: white;
+    }
+
+    .cambiar {
+      background-color: black;
+    }
+
+    ng-sidebar-container {
+      height: 90vh;
+    }
+  }
+
+  .iconcontainer {
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      font-size: 50px;
+    }
+
+    .fa-facebook {
+      color: darkblue;
+    }
+
+    .fa-linkedin-in {
+      color: lightskyblue;
+    }
+
+    .fa-github {
+      color: wheat;
+    }
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+
+  .contbarraint {
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
+
+    #proyecto {
+      margin-left: 0;
+    }
+
+    #skill {
+      margin-left: 0;
+    }
+
+    #exp {
+      margin-left: 0;
+    }
+  }
+
+  a {}
+  
+  .active {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  label {
+    color: $c_textoform;
+  }
+
+  .containerbtn {
+    display: flex;
+  }
+
+  // flechas alturas y derecha
+  .flecha {
+    position: fixed;
+    bottom: 8.5rem;
+    right: 5rem;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .outlet-container {
+    height: 100%;
+    padding-top: 40px;
+    background: transparent;
+
+    .outletruta {
+      display: inline-block;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .alt1 {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+
+    .btnsobre_iconbutton {
+      position: absolute;
+      z-index: 1000;
+      margin-bottom: 500px;
+      margin-left: 0;
+      color: grey;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .alturaform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 250px;
+      height: 90vh;
+      width: 100%;
+      margin-right: 0;
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 100;
+        width: 80%;
+        min-height: 250px;
+        height: 80%;
+
+        .insideform {
+          /*
+          background-color: transparent;
+          height: 100vh;
+          width: 90%;
+
+          margin-top: 20px;
+          padding-top: 10px;
+          */
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 80%;
+          }
+          h2 {
+            font-size: 3vh;
+          }
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .alturasobremi {
+      background-color: transparent;
+      position: absolute;
+      overflow: hidden;
+
+      left: 0;
+      display: block;
+      z-index: 100;
+
+      height: 90%;
+      width: 100%;
+
+      .rouleter {
+        width: 100%;
+        height: 50%;
+      }
+    }
+
+    .clasesidebar_container {
+      background-color: white;
+    }
+    .cambiar {
+      background-color: black;
+    }
+
+    ng-sidebar-container {
+      height: 90vh;
+    }
+  }
+
+  .iconcontainer {
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      font-size: 50px;
+    }
+
+    .fa-facebook {
+      color: darkblue;
+    }
+
+    .fa-linkedin-in {
+      color: lightskyblue;
+    }
+    .fa-github {
+      color: wheat;
+    }
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+
+  .contbarraint {
+    /* background-color: green; */
+    width: 100%;
+    height: auto;
+    h4 {
+      a {
+        font-size: 13px;
+      }
+    }
+
+    #proyecto {
+      margin-left: 0;
+    }
+
+    #skill {
+      margin-left: 0;
+    }
+
+    #exp {
+      margin-left: 0;
+    }
+  }
+
+  .active {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  label {
+    color: $c_textoform;
+  }
+
+  .containerbtn {
+    display: flex;
+  }
+
+  // flechas alturas y derecha
+  .flecha {
+    position: fixed;
+    bottom: 8rem;
+    right: 3rem;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .outlet-container {
+    height: 100%;
+    padding-top: 40px;
+    background: transparent;
+
+    .outletruta {
+      display: inline-block;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .alt1 {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    .btnsobre_iconbutton {
+      position: absolute;
+      z-index: 1000;
+      margin-bottom: 500px;
+      margin-left: 0;
+      color: grey;
+
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .alturaform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 250px;
+      height: 90vh;
+      width: 100%;
+
+      margin-right: 0;
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 100;
+        width: 80%;
+        min-height: 250px;
+        height: 80%;
+
+        .insideform {
+          /*
+          background-color: transparent;
+          height: 100vh;
+          width: 90%;
+
+          margin-top: 20px;
+          padding-top: 10px;
+          */
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 80%;
+          }
+          h2 {
+            font-size: 3vh;
+          }
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .alturasobremi {
+      display: block;
+      background-color: transparent;
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      z-index: 100;
+      height: 90%;
+      width: 100%;
+      .rouleter {
+        width: 100%;
+        height: 50%;
+      }
+    }
+
+    .clasesidebar_container {
+      background-color: white;
+    }
+    .cambiar {
+      background-color: black;
+    }
+
+    ng-sidebar-container {
+      height: 90vh;
+    }
+  }
+
+  .iconcontainer {
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      font-size: 50px;
+    }
+
+    .fa-facebook {
+      color: darkblue;
+    }
+
+    .fa-linkedin-in {
+      color: lightskyblue;
+    }
+    .fa-github {
+      color: wheat;
+    }
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+
+  .contbarraint {
+    /* background-color: yellow; */
+    width: 100%;
+    height: auto;
+
+    #proyecto {
+      margin-left: 0;
+    }
+
+    #skill {
+      margin-left: 0;
+    }
+
+    #exp {
+      margin-left: 0;
+    }
+  }
+
+  .active {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  label {
+    color: $c_textoform;
+  }
+
+  .containerbtn {
+    display: flex;
+  }
+
+  // flechas alturas y derecha
+  .flecha {
+    position: fixed;
+    bottom: 8rem;
+    right: 4rem;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .outlet-container {
+    height: 100%;
+    padding-top: 40px;
+    background: transparent;
+
+    .outletruta {
+      display: inline-block;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .alt1 {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+
+    .btnsobre_iconbutton {
+      position: absolute;
+      z-index: 1000;
+      margin-bottom: 500px;
+      margin-left: 0;
+      color: grey;
+
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .alturaform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 250px;
+      height: 90vh;
+      width: 100%;
+      margin-right: 0;
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        width: 98%;
+        min-height: 250px;
+        height: 80%;
+
+        .insideform {
+          /*
+          background-color: transparent;
+          height: 100vh;
+          width: 90%;
+
+          margin-top: 20px;
+          padding-top: 10px;
+          */
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 80%;
+          }
+
+          h2 {
+            font-size: 3vh;
+          }
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .alturasobremi {
+      background-color: transparent;
+      position: absolute;
+      overflow: hidden;
+
+      left: 0;
+      display: block;
+      z-index: 100;
+
+      height: 90%;
+      width: 100%;
+
+      .rouleter {
+        width: 100%;
+        height: 50%;
+      }
+    }
+
+    /*  ::ng-deep aside {
+      background-color: transparent;
+      height: 95%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    ::ng-deep .ng-sidebar {
+      background-color: transparent;
+      box-shadow: 0 0 2.5rem rgba(85, 85, 85, 0.5);
+      margin-left: 0px;
+    } */
+
+    .clasesidebar_container {
+      background-color: white;
+    }
+    .cambiar {
+      background-color: black;
+    }
+
+    ng-sidebar-container {
+      background: transparent;
+      height: 90vh;
+    }
+  }
+
+  .iconcontainer {
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      font-size: 50px;
+    }
+
+    .fa-facebook {
+      color: darkblue;
+    }
+
+    .fa-linkedin-in {
+      color: lightskyblue;
+    }
+    .fa-github {
+      color: wheat;
+    }
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+
+  .contbarraint {
+    /* background-color: orange; */
+    width: 100%;
+    height: auto;
+
+    //forzadita
+    h4 {
+      a {
+        font-size: 10px;
+      }
+    }
+
+    #proyecto {
+      margin-left: 0;
+    }
+
+    #skill {
+      margin-left: 0;
+    }
+
+    #exp {
+      margin-left: 0;
+    }
+  }
+
+  .active {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  label {
+    color: $c_textoform;
+  }
+
+  .containerbtn {
+    display: flex;
+  }
+
+  // flechas alturas y derecha
+  .flecha {
+    position: fixed;
+    bottom: 8rem;
+    right: 0.5rem;
+    width: 25px;
+    i {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .outlet-container {
+    height: 100%;
+    padding-top: 40px;
+    background: transparent;
+
+    .outletruta {
+      display: inline-block;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .alt1 {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+
+    .btnsobre_iconbutton {
+      position: absolute;
+      z-index: 1000;
+      margin-bottom: 500px;
+      margin-left: 0;
+      color: grey;
+
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .alturaform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 250px;
+      height: 90vh;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        z-index: 100;
+        width: 90%;
+        min-height: 250px;
+        height: 80%;
+
+        .insideform {
+          /*
+          background-color: transparent;
+          height: 100vh;
+          width: 100%;
+          margin-top: 0px;
+          padding-top: 0px;
+          */
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 90%;
+          }
+
+          h2 {
+            font-size: 3vh;
+          }
+
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .alturasobremi {
+      display: block;
+      background-color: transparent;
+      position: absolute;
+      overflow: hidden;
+
+      left: 0;
+
+      z-index: 100;
+
+      height: 90%;
+      width: 100%;
+
+      .rouleter {
+        width: 100%;
+        height: 50%;
+      }
+    }
+
+    .clasesidebar_container {
+      background-color: white;
+    }
+
+    .cambiar {
+      background-color: black;
+    }
+
+    ng-sidebar-container {
+      height: 90vh;
+    }
+  }
+
+  .iconcontainer {
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      font-size: 50px;
+    }
+
+    .fa-facebook {
+      color: darkblue;
+    }
+
+    .fa-linkedin-in {
+      color: lightskyblue;
+    }
+    .fa-github {
+      color: wheat;
+    }
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+
+  .contbarraint {
+    /* background-color: pink; */
+    height: auto;
+    width: 100%;
+
+    #proyecto {
+      margin-left: 0;
+    }
+
+    #skill {
+      margin-left: 0;
+    }
+
+    #exp {
+      margin-left: 0;
+    }
+  }
+  .active {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  label {
+    color: $c_textoform;
+  }
+
+  .containerbtn {
+    display: flex;
+  }
+
+  // flechas alturas y derecha
+  .flecha {
+    position: fixed;
+    bottom: 6rem;
+    right: calc(100vw / 2);
+    width: 20px;
+    i {
+      font-size: 22px;
+    }
+  }
+}

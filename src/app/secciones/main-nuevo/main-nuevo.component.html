@@ -1,0 +1,34 @@
+<div class="container-fluid" id="card">
+  <div id="wrap">
+    <!-- <div class="imgcontainer">
+            <div class="motiv motiv01"> <h1>ONE</h1> </div>
+            <div class="motiv motiv02"> <h1>TWO</h1> </div>
+            <div class="motiv motiv03"> <h1>THREE</h1> </div> 
+        </div> -->
+  </div>
+  <div class="cajas">
+    <div class="box1">
+      <div class="btns">
+        <button class="btn" 
+        value="cancelar subscripcion" 
+        (click)="detenerSubs()">
+          Cancelar Envio
+        </button>
+  
+        <button
+          class="btn"
+          value="retomar subscripcion"
+          (click)="iniciarSubscription()"
+        >
+          Enviar
+        </button>
+      </div>
+
+      <div class="imagenurl">
+        <app-carusel></app-carusel>
+      </div>
+      
+    </div>
+    <div class="box2"></div>
+  </div>
+</div>

@@ -1,0 +1,111 @@
+<div [ngClass]="(isVideo$ | async) ? 'nobgvideo' : 'bgvideo'" class="container-fluid">
+  <div class="background-card">
+    <!-- fadeInAnimation [duration]="2" [delay]="0" -->
+
+    <div class="grid-container">
+
+      <div class="innergrid_container">
+
+        <div [ngClass]="(isVideo$ | async) ? 'bgvideo' : 'nobgvideo'" class="imagen">
+
+          <!-- src="assets/sobremi/fondosmart2.png"
+          alt="tongas sonrie" -->
+         
+         <!-- <div class="imagecontainer">
+            <img [ngClass]="(isVideo$ | async) ? '' : 'imgopacity'" class="rotarimg"/>
+            <img [ngClass]="(isVideo$ | async) ? '' : 'imgopacity'" class="rotarimg"/>
+          </div> -->
+          <div class="imagecontainer">
+
+            <img [ngClass]="(isVideo$ | async) ? '' : 'imgopacity'" class="rotarimg"/>
+
+            <!-- ===================================== -->
+
+            <!-- ===================================== -->
+          </div>
+          
+          
+  
+        </div>
+  
+        <div [ngClass]="(isVideo$ | async) ? 'bg_novideotexto' : 'bg_videotexto'" class="textos">
+          <div class="txts">
+  
+            <div class="txts_interno"> <!-- C -->
+  
+              <!-- <small fadeInAnimation [duration]="1" [delay]="1">Hello im gaston ponce</small> -->
+              <h2 class=""> <!-- fadeInAnimation [duration]="2" [delay]="1" -->
+                GASTON ALEJANDRO
+              </h2>
+              <p class="subtitulo"> <!-- fadeInAnimation [duration]="1" [delay]="1" -->
+                Junior web Developer
+              </p>
+              <p class="">  <!-- fadeInAnimation [duration]="2" [delay]="1" -->
+                Soy estudiante en analista de sistemas, centrado en desarrollo web Full stack.
+              </p>
+  
+            </div>
+            
+          </div>
+        
+          <div class="icon-container">
+  
+            <div class="icon-container_intern">
+  
+              <div class="iconstxt">
+                <div class="fecha fila">
+                  <div class="iconocontainer">
+                    <i class="far fa-calendar-alt"></i>
+                  </div>
+    
+                  <div class="fechacontenedor">
+                    <div class="elemento_p">
+                      <p class=""> <!-- fadeInAnimation [duration]="2" [delay]="1" -->
+                        Dia, Mes del 1987
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tel fila">
+                  <div
+                    class="iconocontainer_tel"
+                   
+                  >
+    
+                <!--   (mouseover)="iconoOver()"
+                  (mouseout)="iconoOut()" -->
+    
+                    <a
+                      href="https://api.whatsapp.com/send?phone=543516789295&text=hola,%20¿qué%20tal%20estás?"
+                      [@icono]="is_over"
+                    >
+                      <i class="fas fa-phone-square-alt"></i
+                    ></a>
+                  </div>
+                  <div class="telcontenedor">
+                    <div class="elemento_p_tel">
+                      <p > <!-- fadeInAnimation [duration]="1" [delay]="2" -->
+                        54+ 351-678-9295
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="footer-icons">
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-github-square"></i></a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

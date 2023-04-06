@@ -1,0 +1,615 @@
+@import "_paletaobscura";
+@import "_paletaaplicacion";
+@import "_variablehovercard";
+
+  .hovercard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $c_textoform;
+  visibility: hidden;
+  border-radius: 10px;
+ } 
+
+
+.grid-container {
+  overflow: hidden;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px 15px;
+  grid-template-areas:
+    "uno dos tres"
+    "cuatro cinco seis"
+    "siete ocho nueve";
+}
+
+/* card hover es el cartel al pasar */
+/* @include hovercard; */
+
+/* background mover */
+.mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 { 
+  background: $c_interno;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  z-index: -10;
+  visibility: hidden;
+}
+
+.mover1, .mover4, .mover7{
+  border-top-left-radius: 25px;
+}
+
+.mover2, .mover5, .mover8{
+  width: 98%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+}
+
+.mover3, .mover6, .mover9{
+  border-top-right-radius: 25px;
+}
+
+/* PROBAREMOS ESTO CUALQUIER COSA BORRAR */
+.textobottom {
+  text-transform: uppercase;
+  bottom: 0;
+  position: absolute;
+  background: $c_textoform;
+  z-index: 10;
+  height: 15%;
+  width: 100%;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(12px, 2.5vw, 18px);
+  }
+}
+
+/* PROBAREMOS ESTO CUALQUIER COSA BORRAR */
+
+/* .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve { */
+
+//clases funcionaran solo con el video de fondo
+.cardback_novideo {
+  background:  $c_fondoform;
+  transition: background-color 4200ms linear;
+}
+
+.cardback_sun {
+  background: #3758801c;
+  box-shadow: 0px 2x 2px 2px #0C2C58;
+  transition: background-color 4200ms linear;
+}
+
+.cardback_moon {
+  background: #3758801c;
+  box-shadow: 0px 2px 2px 2px #0C2C58;
+  transition: background-color 4200ms linear;
+}
+//clases funcionaran solo con el video de fondo
+
+.cardback {
+  /* grid-area: uno; */
+  
+  border-radius: 30px;
+  position: relative;
+  
+  .imgcontainer{
+    max-width: 350px;
+    max-height: 250px;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    img{
+      width: 50%;
+      height: 80%;
+    }
+  }
+
+}
+
+img {
+  max-width: 350px;
+  /* max-height: 250px; */
+  /* height: calc(200px); */
+  height: 200px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//========= cuando el video este o no reproduciendose =====
+.container-fluid_video {
+  background: #233d5e1c;
+  transition: background-color 2800ms linear;
+}
+.container-fluid_novideo {
+  background: #233d5e;
+  transition: background-color 2800ms linear;
+}
+//========= cuando el video este o no reproduciendose =====
+
+//solo funcionaran cuando este el video de fondo
+.container-fluid_sun {
+  background: #233d5e1c;
+}
+
+.container-fluid_moon {
+  /* background: #233d5e1c; */
+  background: rgba(0, 191, 255, 0.088);
+}
+//solo funcionaran cuando este el video de fondo
+
+.container-fluid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 100%; */
+  height: 83vh;
+  /* background: #233d5e; */
+  padding: 5px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.container-fluid:hover{
+  box-shadow: 0px 0px 5px 5px rgba(9,21,43,1);
+}
+
+/* RESPONSIVIDAD ----------- */
+@media screen and (max-width: 1920px) {
+  .grid-container{
+    height: 90%;
+    width: 90%;
+  }
+
+  .textobottom {
+    h2 {
+      font-size: 15px;
+    }
+  }
+  
+  .hovercard { 
+    p {
+      font-size: 12px;
+    }
+   
+  }
+
+  .container-fluid {
+    /* background-color:  #233d5e; */
+    height: 70vh;
+    width: 98%;
+    margin-top: 10px;
+    border: 1px solid #1154f4;
+
+    .mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 {   /* */
+      /* background: $c_interno; */
+     /*  height: 90%;
+      width: 90%; */
+      position: absolute;
+      z-index: -10;
+      visibility: hidden;
+      
+    }
+    
+    .mover1, .mover4, .mover7{
+      border-top-left-radius: 25px;
+    }
+    
+    .mover2, .mover5, .mover8{
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    
+    }
+    
+    .mover3, .mover6, .mover9{
+      border-top-right-radius: 25px;
+    }
+
+    .imgcontainer {
+      width: 90%;
+      height: 90%;
+    }
+    
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  
+  .grid-container{
+    height: 100%;
+    width: 100%;
+  }
+
+  .textobottom {
+    h2 {
+      font-size: 15px;
+    }
+  }
+  
+  .hovercard { 
+    p {
+      font-size: 12px;
+    }
+   
+  }
+
+  .container-fluid {
+    
+    /* background-color:  #233d5e; */
+    width: 98%;
+    height: 70vh;
+    margin-top: 10px;
+    border: 1px solid #1154f4;
+
+    .mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 {   /* */
+      /* background: $c_interno; */
+     /*  height: 90%;
+      width: 90%; */
+      position: absolute;
+      z-index: -10;
+      visibility: hidden;
+      
+    }
+    
+    .mover1, .mover4, .mover7{
+      border-top-left-radius: 25px;
+    }
+    
+    .mover2, .mover5, .mover8{
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    
+    }
+    
+    .mover3, .mover6, .mover9{
+      border-top-right-radius: 25px;
+    }
+
+    .imgcontainer {
+      width: 90%;
+      height: 90%;
+    }
+    
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .grid-container{
+    height: 90%;
+    width: 90%;
+  }
+
+  .textobottom {
+    h2 {
+      font-size: 15px;
+    }
+  }
+  
+  .hovercard { 
+    p {
+      font-size: 12px;
+    }
+   
+  }
+
+  .container-fluid {   
+    /* background-color:  #233d5e; */
+    height: 75vh;
+    width: 98%;
+    margin-top: 10px;
+    border: 1px solid #1154f4;
+
+    .mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 {   /* */
+      /* background: $c_interno; */
+     /*  height: 90%;
+      width: 90%; */
+      position: absolute;
+      z-index: -10;
+      visibility: hidden;
+      
+    }
+    
+    .mover1, .mover4, .mover7{
+      border-top-left-radius: 25px;
+    }
+    
+    .mover2, .mover5, .mover8{
+      
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    
+    }
+    
+    .mover3, .mover6, .mover9{
+      border-top-right-radius: 25px;
+    }
+
+    .imgcontainer {
+      width: 90%;
+      height: 90%;
+    }
+    
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .grid-container{
+    height: 100%;
+    width: 100%;
+  }
+
+  .textobottom {
+    h2 {
+      font-size: 15px;
+    }
+  }
+  
+  .hovercard { 
+    p {
+      font-size: 12px;
+    }
+   
+  }
+
+  .container-fluid {
+    /* background-color:  #233d5e; */
+    height: 72vh;
+    width: 98%;
+    margin-top: 30px;
+    border: 1px solid #1154f4;
+
+    .mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 {   /* */
+      /* background: $c_interno; */
+     /*  height: 90%;
+      width: 90%; */
+      position: absolute;
+      z-index: -10;
+      visibility: hidden;
+      
+    }
+    
+    .mover1, .mover4, .mover7{
+      border-top-left-radius: 25px;
+    }
+    
+    .mover2, .mover5, .mover8{
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    
+    }
+    
+    .mover3, .mover6, .mover9{
+      border-top-right-radius: 25px;
+    }
+
+    .imgcontainer {
+      width: 90%;
+      height: 90%;
+    }
+    
+  }
+  
+}
+
+@media screen and (max-width: 779px) {
+  
+  .container-fluid {
+    /* background-color: #233d5e; */
+    height: 72vh;
+    margin-top: 30px;
+    border: 1px solid #1154f4;
+
+    .grid-container{
+      height: 100%;
+    }
+  
+    .textobottom {
+      h2 {
+        font-size: 15px;
+      }
+    }
+    
+    .hovercard { 
+      padding: 0;
+      margin: 0;
+      width: 100%;
+
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 19px;
+      }
+     
+    }
+  
+   
+
+    .mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 {   /* */
+      /* background: $c_interno; */
+     /*  height: 90%;
+      width: 90%; */
+      position: absolute;
+      z-index: -10;
+      visibility: hidden;
+      
+    }
+    
+    .mover1, .mover4, .mover7{
+      border-top-left-radius: 25px;
+    }
+    
+    .mover2, .mover5, .mover8{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    
+    }
+    
+    .mover3, .mover6, .mover9{
+      border-top-right-radius: 25px;
+    }
+
+    .imgcontainer {
+      width: 90%;
+      height: 90%;
+    }
+    
+  }
+
+  
+}
+
+@media screen and (max-width: 537px) {
+  .container-fluid {
+    /* background-color: #233d5e; */
+     height: 68vh; /*82%*/ /* 68vh*/
+     margin-top: 30px;
+     border: 1px solid #1154f4;
+    
+    .grid-container{
+      height: 90%;
+    }
+  
+    .textobottom {
+      h2 {
+        font-size: 10px;
+      }
+    }
+    
+    .hovercard { 
+      padding: 0;
+      margin: 0;
+      width: 100%;
+
+
+      p {
+       
+        vertical-align: middle;
+        text-align: center;
+        font-size: 12px;
+        line-height: 17px;
+      }
+     
+    }
+  
+    
+
+    .mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 {   /* */
+      /* background: $c_interno; */
+     /*  height: 90%;
+      width: 90%; */
+      position: absolute;
+      z-index: -10;
+      visibility: hidden;
+      
+    }
+    
+    .mover1, .mover4, .mover7{
+      border-top-left-radius: 20px;
+    }
+    
+    .mover2, .mover5, .mover8{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    
+    }
+    
+    .mover3, .mover6, .mover9{
+      border-top-right-radius: 20px;
+    }
+
+    .imgcontainer {
+      width: 90%;
+      height: 90%;
+    }
+    
+  }
+
+}
+
+@media screen and (max-width: 322px) {
+ 
+  .container-fluid {
+    /* background-color: #233d5e; */
+    height: 90%;
+    width: 98%;
+    margin-top: 30px;
+    border: 1px solid #1154f4;
+
+    .grid-container{
+      height: 90%;
+      width: 100%;
+    }
+  
+    .textobottom {
+      h2 {
+        font-size: 10px;
+      }
+    }
+    
+    .hovercard { 
+      padding: 0;
+      margin: 0;
+      width: 100%;
+
+
+      p {
+        text-align: center;
+        font-size: 11px;
+        line-height: 13px;
+      }
+     
+    }
+  
+   
+
+    .mover1, .mover2, .mover3, .mover4, .mover5, .mover6, .mover7, .mover8, .mover9 {   /* */
+      /* background: $c_interno; */
+     /*  height: 90%;
+      width: 90%; */
+      position: absolute;
+      z-index: -10;
+      visibility: hidden;
+      
+    }
+    
+    .mover1, .mover4, .mover7{
+      border-top-left-radius: 20px;
+    }
+    
+    .mover2, .mover5, .mover8{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    
+    }
+    
+    .mover3, .mover6, .mover9{
+      border-top-right-radius: 20px;
+    }
+
+    .imgcontainer {
+      width: 90%;
+      height: 90%;
+    }
+    
+  }
+
+}

@@ -1,0 +1,1115 @@
+
+
+timelineCards(): void {
+
+    let tlfondoazul = gsap.timeline(); 
+
+    // FILAS
+    tlfondoazul.to(
+      ".fila1, .fila2, .fila3",
+      {
+        x: 0,
+
+        duration: 0.2,
+        ease: "none",
+      },
+      0.4
+    );
+    
+  }
+
+encimauno() {
+    /* this.render.setStyle(this.elRef.nativeElement, "color", "green"); */
+
+    /* this.animacioBounce().pause(); */
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+    tltext.to(".hcard1", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+    tltext.to(
+      ".mover1",
+      {
+        x: -10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+
+  }
+
+  fuerauno() {
+   
+    /* this.animacioBounce().resume(); */
+   let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+    tltext.to(".hcard1", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+    tltext.to(
+      ".mover1",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimados() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   
+   tltext.to(".hcard2", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover2",
+      {
+        x: 0,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fuerados() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard2", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover2",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimatres() {
+   
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard3", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover3",
+      {
+        x: 10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueratres() {
+   let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard3", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover3",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimacuatro() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+   
+   tltext.to(".hcard4", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover4",
+      {
+        x: -10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueracuatro() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard4", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover4",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimacinco() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard5", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover5",
+      {
+        x: 0,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueracinco() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard5", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover5",
+      {
+        x: 0,
+
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimaseis() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+   
+   tltext.to(".hcard6", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover6",
+      {
+        x: 10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueraseis() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard6", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover6",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimasiete() {
+   
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard7", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover7",
+      {
+        x: -10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fuerasiete() {
+    
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard7", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover7",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimaocho() {
+   
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard8", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover8",
+      {
+        x: 0,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueraocho() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard8", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover8",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimanueve() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard9", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover9",
+      {
+        x: 10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueranueve() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard9", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover9",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+   /* lo ultimo de lo ultimo */
+  encima() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard9", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+    [".mover1"], /* , ".mover2", ".mover3", ".mover4", ".mover5", ".mover6", ".mover7", ".mover8", ".mover9" */
+      {
+        x: 10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+ fuera(){
+  let tltext = gsap.timeline({
+    repeat: 0,
+    repeatDelay: 0,
+  });
+
+ tltext.to(".hcard9", {
+    x: 0,
+    rotation: 0,
+    duration: 0.5,
+    autoAlpha: 0,
+    scale: 0.9,
+  });
+
+ tltext.to(
+    [".mover1"], /*  ".mover2", ".mover3", ".mover4", ".mover5", ".mover6", ".mover7", ".mover8", ".mover9" */
+    {
+      x: 0,
+      rotation: 0,
+      duration: 1,
+      scale: 1,
+      autoAlpha: 0,
+    },
+    0
+  );
+
+} 
+
+
+
+
+
+
+
+
+
+// TODODODODODODODOD
+  encimauno() {
+    /* this.render.setStyle(this.elRef.nativeElement, "color", "green"); */
+
+    /* this.animacioBounce().pause(); */
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+    tltext.to(".hcard1", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+    tltext.to(
+      ".mover1",
+      {
+        x: -10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+
+  }
+
+  fuerauno() {
+   
+    /* this.animacioBounce().resume(); */
+   let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+    tltext.to(".hcard1", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+    tltext.to(
+      ".mover1",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimados() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   
+   tltext.to(".hcard2", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover2",
+      {
+        x: 0,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fuerados() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard2", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover2",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimatres() {
+   
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard3", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover3",
+      {
+        x: 10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueratres() {
+   let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard3", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover3",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimacuatro() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+   
+   tltext.to(".hcard4", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover4",
+      {
+        x: -10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueracuatro() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard4", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover4",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimacinco() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard5", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover5",
+      {
+        x: 0,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueracinco() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard5", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover5",
+      {
+        x: 0,
+
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimaseis() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+   
+   tltext.to(".hcard6", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover6",
+      {
+        x: 10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueraseis() {
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard6", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover6",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimasiete() {
+   
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard7", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover7",
+      {
+        x: -10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fuerasiete() {
+    
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard7", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover7",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimaocho() {
+   
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard8", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover8",
+      {
+        x: 0,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueraocho() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard8", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover8",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }
+
+  encimanueve() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard9", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 1,
+    });
+
+   tltext.to(
+      ".mover9",
+      {
+        x: 10,
+        z: 40,
+        y: -10,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 1,
+      },
+      0
+    );
+  }
+
+  fueranueve() {
+
+    let tltext = gsap.timeline({
+      repeat: 0,
+      repeatDelay: 0,
+    });
+
+   tltext.to(".hcard9", {
+      x: 0,
+      rotation: 0,
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.9,
+    });
+
+   tltext.to(
+      ".mover9",
+      {
+        x: 0,
+        rotation: 0,
+        duration: 1,
+        scale: 1,
+        autoAlpha: 0,
+      },
+      0
+    );
+  }

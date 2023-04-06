@@ -1,0 +1,25 @@
+<div class="container-fluid principal">
+
+    <div class="container img display">
+        <div class="contenedorabsolute">
+            <div class="h1_contenedor">
+                <div class="linkaimg">
+                <!-- <img src="assets/experiencia/iconomano.png" alt="no funciona imagen"> -->                    
+                <a     
+                    href="assets/experiencia/cv.pdf"
+                    target="_blank"
+                    download="gastoncv.pdf"
+                    class="typewriter"
+                >
+                  <h1 class="parpadea">DESCARGAR</h1>
+                </a>
+
+                </div>               
+            </div>            
+        </div>       
+    </div>
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap" rel="stylesheet"> 

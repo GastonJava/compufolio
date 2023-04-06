@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EAET,MAAM,EAAE,KAAK;CAWhB;;AAbD,AAII,YAJQ,CAIR,OAAO,CAAC;EACJ,gBAAgB,EAAE,MAAM;CAC3B;;AANL,AAOI,YAPQ,CAOR,OAAO,CAAC;EACJ,gBAAgB,EAAE,KAAK;CAC1B;;AATL,AAUI,YAVQ,CAUR,OAAO,CAAC;EACJ,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "testinghero.component.scss"
+    ],
+    "names": [],
+    "file": "testinghero.component.css"
+}

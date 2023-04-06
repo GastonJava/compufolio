@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mi-pagina-web-angular": {
+      "hosting": {
+        "mi-pagina-web-angular": [
+          "mi-pagina-web-angular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mi-pagina-web-angular"
+  }
+}

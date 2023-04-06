@@ -1,0 +1,50 @@
+// PALETA DE COLORES PARA PROBAR 
+@mixin hero {
+    background: #f1f3f8;
+  }
+  
+  // IMAGEN top y bottom from hero section
+  @mixin triangulotop {
+    background: linear-gradient(to bottom, #d6e0f0, #9abcce, #d6e0f0);
+  }
+  
+  @mixin triangulobottom {
+    background: linear-gradient(to bottom, #d6e0f0, #9abcce, #d6e0f0);
+  }
+  
+  // MAIN section
+  @mixin main__content {
+    background: #d6e0f0;
+  }
+  
+  //CARD section from main
+  @mixin main--leftclip {
+    background: linear-gradient(to left,  #f1f3f8, #d6e0f0, #393b44);
+  }
+  
+  @mixin main--centerclip {
+    background: linear-gradient(to bottom, #f1f3f8, #d6e0f0, #393b44);
+  }
+  
+  @mixin main--rightclip {
+    background: linear-gradient(to right,  #f1f3f8, #d6e0f0, #393b44);
+  }
+
+  //todas lineas horizontales con grados cortados
+  @mixin lineastop{
+    background: #dddfe7;
+  }
+
+  //WORK section
+  @mixin work {
+    background: #393b44;
+  }
+
+  @mixin card{
+   background: #8d93ab;
+   text-shadow: 3px -4px 4px rgba(150, 150, 150, 1);
+  }
+
+  @mixin lineasbottom{
+    background: #373941;
+   }

@@ -1,0 +1,259 @@
+
+<!-- PROBANDO EL GRID DE NUEVO A VER SI FUNCIONA -->
+<div
+  [ngClass]="
+    (isVideoOn$ | async)
+      ? 'container-fluid_novideo'
+      : (isSunToggle$ | async)
+      ? 'container-fluid_sun'
+      : 'container-fluid_moon'
+  "
+  class="container-fluid"
+>
+  <!-- <span (click)="ngOnDestroy()">DETENER ANIMACION</span> -->
+
+  <div class="grid-container">
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback uno center fila1"
+      (mouseover)="encima('uno')"
+      (mouseout)="fuera('uno')"
+    >
+    <!--   
+    (mouseover)="encimauno()"
+    (mouseout)="fuerauno()"
+     -->   
+      <div class="mover1"></div>
+
+      <div class="hovercard hcard1">
+        <p>Framework</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/angularsvg.png" alt="angular" />
+      </div>
+
+      <div class="textobottom"><h2>Angular</h2></div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback dos center fila1"
+      (mouseover)="encima('dos')"
+      (mouseout)="fuera('dos')"
+    >
+    <!--
+    (mouseover)="encimados()"
+    (mouseout)="fuerados()" -->
+      <div class="mover2"></div>
+
+      <div class="hovercard hcard2">
+        <p>MICROSOFT MVC</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/dot net.png" alt="net mvc" />
+      </div>
+
+      <div class="textobottom animated animate__swing">
+        <h2>Net MVC</h2>
+      </div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback tres center fila1"
+      (mouseover)="encima('tres')"
+      (mouseout)="fuera('tres')"
+    >
+    <!--
+    (mouseover)="encimatres()"
+    (mouseout)="fueratres()" -->
+      <div class="mover3"></div>
+
+      <div class="hovercard hcard3">
+        <p>SQL Server Diseño</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/sqlserver2.png" alt="sql server" />
+      </div>
+
+      <div class="textobottom"><h2>SQL SERVER</h2></div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback cuatro center fila2"
+      (mouseover)="encima('cuatro')"
+      (mouseout)="fuera('cuatro')"
+    >
+    <!--
+      (mouseover)="encimacuatro()"
+      (mouseout)="fueracuatro()" -->
+      <div class="mover4"></div>
+
+      <div class="hovercard hcard4">
+        <p>JAVASCRIPT</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/jstransparente.png" alt="javascript" />
+      </div>
+
+      <div class="textobottom"><h2>JAVASCRIPT</h2></div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback cinco center fila2"
+      (mouseover)="encima('cinco')"
+      (mouseout)="fuera('cinco')"
+    >
+    <!--
+    (mouseover)="encimacinco()"
+    (mouseout)="fueracinco()" -->
+      <div class="mover5"></div>
+
+      <div class="hovercard hcard5">
+        <p>HTML 5</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/htmltrans.png" alt="html" />
+      </div>
+      <div class="textobottom">
+        <h2>Html 5</h2>
+      </div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback seis center fila2"
+      (mouseover)="encima('seis')"
+      (mouseout)="fuera('seis')"
+    >
+    <!--
+      (mouseover)="encimaseis()"
+      (mouseout)="fueraseis()" -->
+      <div class="mover6"></div>
+
+      <div class="hovercard hcard6">
+        <p>CSS3 DISEÑO</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/css3transparente.png" alt="css3" />
+      </div>
+      <div class="textobottom"><h2>CSS3</h2></div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback siete center fila3"
+      (mouseover)="encima('siete')"
+      (mouseout)="fuera('siete')"
+    >
+    <!--
+      (mouseover)="encimasiete()"
+      (mouseout)="fuerasiete()" -->
+      <div class="mover7"></div>
+
+      <div class="hovercard hcard7">
+        <p>GITHUB</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/githubicono.png" alt="github" />
+      </div>
+      <div class="textobottom"><h2>GITHUB</h2></div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback ocho center fila3"
+      (mouseover)="encima('ocho')"
+      (mouseout)="fuera('ocho')"
+    >
+    <!--
+      (mouseover)="encimaocho()"
+      (mouseout)="fueraocho()" -->
+      <div class="mover8"></div>
+
+      <div class="hovercard hcard8">
+        <p>FLUTTER DESARROLLO MOBIL</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/fluttertransparent.png" alt="html" />
+      </div>
+      <div class="textobottom"><h2>Flutter</h2></div>
+    </div>
+
+    <div
+      [ngClass]="
+      (isVideoOn$ | async)
+          ? 'cardback_novideo'
+          : (isSunToggle$ | async)
+          ? 'cardback_sun'
+          : 'cardback_moon'
+      "
+      class="cardback nueve center fila3"
+      (mouseover)="encima('nueve')"
+      (mouseout)="fuera('nueve')"
+    >
+   
+      <div class="mover9"></div>
+
+      <div class="hovercard hcard9">
+        <p appMouseoverdom>MARCO TRABAJO AGIL</p>
+      </div>
+      <div class="imgcontainer">
+        <img src="assets/skills/scrumpng.png" alt="github" />
+      </div>
+      <div class="textobottom"><h2>scrum</h2></div>
+    </div>
+  </div>
+</div>
+
+

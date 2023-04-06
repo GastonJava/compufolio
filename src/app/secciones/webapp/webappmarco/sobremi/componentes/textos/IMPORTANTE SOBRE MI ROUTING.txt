@@ -1,0 +1,20 @@
+const appRoutes: Routes = [
+   {path: 'nuevohero', redirectTo: 'sobremi', pathMatch: 'full' }, 
+    
+    {path: 'sobremi', component: SobremiComponent, data: {animation: 'sobremi'} }, /* data: {animation: 'isRight'} */
+    {
+        path: 'project', component: ProjectComponent, data: {animation: 'project'}
+    },
+    {path: 'skills', component: SkillsComponent, data: {animation: 'skills'} }, /* data: {animation: 'isLeft'} */
+    {
+        path: 'proyecto', component: ProyectosComponent,
+        children: [
+            { path: '', redirectTo: 'regformulario', pathMatch: 'full' },
+            { path: 'reghelado', component: RegistrarHeladoComponent },
+            { path: 'regformulario', component: HeladeriaformComponent },
+
+        ]
+    },
+    
+    
+];

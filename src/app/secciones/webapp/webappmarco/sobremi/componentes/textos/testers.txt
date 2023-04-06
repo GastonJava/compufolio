@@ -1,0 +1,279 @@
+@import "_paletaobscura";
+@import "_paletaaplicacion";
+
+.work__main {
+    background: $c_interno;
+    grid-area: work__main;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 0.6fr 2fr 1fr 0.3fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+      "work__main--sobremi ."
+      "work__main--parrafo work__main--img"
+      ". work__main--img"
+      "work__main--barra work__main--barra"
+    ;
+  
+    /* GRID AREAS*/
+  
+    /* fuentes del web aplication */
+    /* @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap'); */
+    /* @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Yatra+One&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&family=UnifrakturMaguntia&family=Yatra+One&display=swap');
+  
+    .work__main--sobremi{
+      grid-area: work__main--sobremi;
+    }
+  
+    .work__main--parrafo{
+      grid-area: work__main--parrafo;
+  
+    }
+  
+    .work__main--img{
+      grid-area: work__main--img;
+    
+    }
+  
+    .work__main--barra{
+      grid-area: work__main--barra;
+      background: $c_interno;
+      margin-bottom: 10px;
+    }
+  
+
+  }
+  
+  /* work main sobre mi atributos  */
+  .work__main--sobremi{
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    h1{
+      color: $c_textoform;
+      font-size: 60px;
+    }
+  }
+  
+  /* work main parrafo atributos */
+  .work__main--parrafo{
+    padding-top: 40px;
+    padding-left: 50px;
+    p{
+      color: $c_textoform;
+      font-size: 50px;
+    }
+  }
+
+
+SOBREMI COMPONENT SCSS
+
+sobre mi componente html ----------------
+
+<div class="container">
+  <div class="row h-100">
+    <div class="col-md-4 bg-danger">
+      <div class="row">
+
+        <div class="col d-flex justify-content-around p-3">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-github"></i>
+        </div>
+
+        <div class="col p-3 bg-white">
+          <h2 class="text-center">CONTACTO</h2>
+          <div class="form-group">
+            <label for="email">Ingresa email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-8 bg-info">
+
+      <!-- aqui iria el famoso amigo router outlet -->
+      <div class="container bg-danger">
+        <div class="row">
+          <h2>SOBRE MI</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-8 pt-3 bg-primary">
+            <p>full stack developer
+              junior apasionado y estudiante
+              de la carrera de analista
+              de sistemas computacional
+              cursandoel ultimo año</p>
+          </div>
+          <div class="col bg-light">
+              <img src="/src/assets/gaston.jpg" alt="tongas negra">
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- aqui iria el famoso amigo router outlet -->
+    </div>
+
+    <div class="container">
+      <div class="row bg-success">
+        <div class="col">banderas britanico, banderas espanol</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---------------------------- APP WORK COMPONENTE --------------------
+
+<section class="work">
+  
+    <div class="work__grid--overlay">
+      <h1 class="work__h1">Bienvenido a mi pagina web</h1>
+    </div> 
+  
+    <div class="work__gridcontainer">
+  
+      <div class="work__form">
+        <div class="area__sociales">
+          <img src="../assets/español.png" alt="vacio">
+          <img src="../assets/linkedint.png" alt="linkedin">
+          <img src="../assets/githubicono.png" alt="github">
+        </div>
+        <div class="form__form">
+          <div class="contacto">
+            <h2>Contacto</h2>
+            <form>
+              <div class="field-text">
+                <input type="email" placeholder="Ingresar Email">
+              </div>
+              
+              <br>
+              <div class="field-text">
+                <input type="password" placeholder="Ingresar Nombre">
+              </div>
+              
+              <br>
+              <div class="field-text">
+                <textarea name="txtarea" placeholder="Escribeme algo..." ></textarea>
+              </div>
+              
+              <br>
+              <div class="btnenviar">
+                <a href="" class="cta">Enviar</a>
+              </div>
+            </form>
+  
+          </div>
+  
+        </div>
+        <div class="form__links">
+          <div class="form__barra-container">
+            <h3>
+              <a routerLink="sobremi">Sobre mi</a>
+            </h3>
+            <h3>
+              <a href="#">Experciencia</a>
+            </h3>
+            <h3>
+              <a href="#">Proyectos</a>
+            </h3>
+            <h3>
+              <a href="#">Skills</a>
+            </h3>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- aca va ir main -->
+  
+      <div class="work__main">
+    
+        <div class="work__main--sobremi">
+          <h1>Sobre mi</h1>
+       </div>
+       <div class="work__main--parrafo">
+          <p class="growp">
+            Full stack developer junior apasionado
+            y estudiante de la carrera analista 
+            de sistemas computacional cursando
+            el ultimo año
+          </p>
+       </div>
+    
+       <div class="work__main--img">
+         <div class="imgbio">
+           <img src="../assets/tongasnegra.jpg" alt="imagen">
+          </div>
+       </div>
+        
+      </div>
+  
+      
+      
+      <!-- aca va ir main -->
+  
+  
+      <div class="barra__footer">
+        <div class="barra__footercontainer">
+          <img src="../assets/banderainglesa.png" alt="bandera britanica">
+          <img src="../assets/español.png" alt="bandera español">
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  --------------------------------------------- --------------------------------------------
+
+  parte del bootstrap de la applicacion web
+
+  SOCIALES
+   <i class="fab fa-facebook"></i>
+   <i class="fab fa-linkedin-in"></i>
+   <i class="fab fa-github"></i>
+
+  FORMULARIO
+  <h2 class="text-center">CONTACTO</h2>
+
+  <div class="form-group">
+  <label for="email">Ingresa email</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn w-100">Submit</button>
+
+  -------------------- --------------------
+  SOBRE MI
+
+  <h2>SOBRE MI</h2>
+
+   <p>full stack developer
+    junior apasionado y estudiante
+     de la carrera de analista
+     de sistemas computacional
+      cursandoel ultimo año</p>
+
+    barra
+   <h4>SOBRE MI</h4>
+   <h4>PROYECTOS</h4>
+   <h4>SKILLS</h4>
+   <h4>EXPERIENCIA</h4>   
+
+   banderas en la barra de afuera principal
+    <img src="/assets/banderainglesa.png" alt="badera inglesa" class="img-fluid img-thumbnail" width="60px" height="60px">
+    <img src="/assets/español.png" alt="bandera español" class="img-fluid img-thumbnail" width="60px" height="60px">

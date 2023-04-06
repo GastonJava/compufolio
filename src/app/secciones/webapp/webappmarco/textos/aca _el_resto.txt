@@ -1,0 +1,716 @@
+@media screen and (min-width: 1280px) {
+
+  .container-fluid {
+    border: 3px solid pink;
+    height: 100vh;
+    width: 105%;
+
+    display: flex;
+    direction: row;
+
+    .background-card {
+      width: 120%;
+
+      .grid-container {
+        width: 100%;
+      }
+    }
+  }
+
+  .barra__link {
+    left: 0;
+    width: 100%;
+    h4 {
+      a {
+        font-size: 1.3vh;
+      }
+    }
+  }
+
+  .alt1 {
+    width: 100%;
+    .alturaform {
+      background-color: wheat;
+      height: 100%;
+      width: 40%;
+      .form {
+        width: 85%;
+
+        h2 {
+          font-size: 35px;
+        }
+      }
+    }
+
+    /* EDITAR LA PAGINA DESDE ACA */
+    ng-sidebar-container {
+
+      display: flex;
+    
+      justify-content: space-around;
+    
+      /* background-color: blueviolet !important; */
+    
+     /*  height: 70vh; */
+    
+     /* background-color: transparent; */
+    
+     ng-sidebar {
+    
+    
+     /*  background-color: transparent !important; */
+    
+      p {
+        color: red;
+      }
+      
+     }
+    
+    }
+  }
+
+  .alturasobremi {
+    .rouleter {
+      height: 95%;
+      width: 100%;
+     
+
+    }
+    height: 100%;
+    width: 60%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 940px) {
+  .container-fluid {
+    border: 3px solid pink;
+    height: 100vh;
+    width: 100%;
+    
+    
+    background-color: red;
+    display: flex;
+    direction: row;
+
+    .background-card {
+      width: 120%;
+
+      .grid-container {
+        width: 100%;
+      }
+    }
+  }
+
+  .barra__link {
+    left: 0;
+    width: 90%;
+    h4 {
+      a {
+        font-size: 1.3vh;
+      }
+    }
+  }
+
+  .alt1 {
+    width: 100%;
+    .alturaform {
+      background-color: wheat;
+      height: 80%;
+      width: 40%;
+      .form {
+        width: 99%;
+        h2 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+
+  .alturasobremi {
+    .rouleter {
+      height: 95%;
+      width: 90%;
+      ng-template {
+        /* display: none; */
+      }
+
+      /* roulete upper */
+      ng-container {
+       
+        ng-sidebar-container {
+          ng-sidebar {
+  
+            .container {
+             
+              router-outlet {
+                /* display: none; */
+              }
+            }
+  
+           
+          }
+        }
+      }
+      /* roulete downloader */
+    }
+    height: 100%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container-fluid {
+    border: 3px solid red;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    direction: row;
+
+    .background-card {
+      width: 120%;
+      .grid-container {
+        width: 100%;
+      }
+    }
+  }
+
+  .contbarraint {
+    width: 100%;
+    background-color: #87a6c6;
+
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      a {
+        font-size: 1.4vh;
+      }
+    }
+
+    #sobre {
+    }
+
+    #proyecto {
+      margin-left: calc(100% - 160px);
+    }
+
+    #skill {
+      margin-left: calc(100% - 110px);
+    }
+
+    #exp {
+      margin-left: calc(100% - 90px);
+    }
+    /*  .barra__link {
+
+      
+    } */
+  }
+
+  .alt1 {
+    width: 100%;
+    .alturaform {
+      background-color: $c_barra;
+      height: 98%;
+      width: 40%;
+      .form {
+        button {
+          font-size: 2.5vh;
+        }
+
+        width: 90%;
+        height: 70%;
+        background-color: $c_barra;
+        
+      }
+
+    
+    }
+  }
+
+  .alturasobremi {
+    height: 100%;
+    width: 60%;
+
+    .rouleter {
+      height: 95%;
+
+      ng-template {
+        /* display: none; */
+      }
+
+
+
+      /* altura rouleter */
+      ng-container {
+        
+        ng-sidebar-container {
+          ng-sidebar {
+  
+            .container {
+             
+              router-outlet {
+                
+              }
+            }
+  
+           
+          }
+        }
+      }
+      /* baja rouletee */
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .container-fluid {
+     
+    display: flex;
+    flex-direction: column-reverse;
+
+    border: 3px solid blue;
+    height: 100vh; /* MODIFICAR ESTO AL ULTIMO 80VH */
+    width: 100vw; /* MODIFICAR ESTO AL ULTIMO */
+
+  
+
+    .background-card {
+      width: 120%;
+      .grid-container {
+        width: 100%;
+      }
+    }
+
+    .alt1 {
+      width: 100%;
+      height: 100%;
+      /* background-color: green; */
+      .alturaform {
+        /* background-color: aqua; */
+        background-color: $c_barra;
+        height: 95%; /* 100vh */
+        width: 130%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+        
+          width: 100%;
+          height: 90%;
+          background-color: $c_barra;
+  
+          h2 {
+            font-size: 3.8vh;
+          }
+          button {
+            font-size: 2.5vh;
+          }
+
+          .insideform {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           /*  background-color: red; */
+    
+
+            height: 100%;
+           /*  background-color: red; */
+           .contbarraint {
+   
+            /*display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; */
+          
+              width: 100%;
+              
+              background-color: #87a6c6;
+
+              h4 {
+                a {
+                  font-size: 1.9vh;
+                }
+              }
+          
+              #sobre{
+               
+              }
+          
+              #proyecto {
+                margin: 0px; /* margin-left: calc(100% - 190px); */
+              }
+          
+              #skill {
+                background-color: blue;
+                margin: 0px; /* margin-left: calc(100% - 190px); */
+              }
+          
+              #exp {
+                background-color: red;
+                margin: 0px; /* margin-left: calc(100% - 190px); */
+              }
+
+              /*  .barra__link {
+          
+                
+              } */
+            }
+
+          }
+            
+        }
+  
+      
+      }
+    }
+
+  }
+
+/*   .display_router_phone{
+    height: 800px;
+    width: 600px;
+    display: block;
+    background-color: transparent;
+  } */
+
+
+  .alturasobremi { /* esto se va de costado */
+    display: block;
+    position: absolute;
+    height: 80%;
+    width: 90%;
+
+    .rouleter {
+      height: 60%;
+      /* display: flex; */
+
+      ng-template {
+        /* display: block !important; */
+        background: transparent;
+      } 
+    }
+  }
+}
+
+@media screen and (max-width: 320) {
+  .container-fluid {
+    border: 3px solid pink;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    .background-card {
+      width: 120%;
+      .grid-container {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .contbarraint {
+   
+    width: 100%;
+    background-color: #87a6c6;
+
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      a {
+        font-size: 1.4vh;
+      }
+    }
+
+    #sobre {
+    }
+
+    #proyecto {
+      margin-left: calc(100% - 160px);
+    }
+
+    #skill {
+      margin-left: calc(100% - 110px);
+    }
+
+    #exp {
+      margin-left: calc(100% - 90px);
+    }
+    /*  .barra__link {
+
+      
+    } */
+  }
+
+  .alt1 {
+    width: 100%;
+    .alturaform {
+      background-color: $c_barra;
+      height: 100%;
+      width: 100%;
+      .form {
+        button {
+          font-size: 2.5vh;
+        }
+
+        width: 90%;
+        height: 70%;
+        background-color: $c_barra;
+        
+      }
+    
+    }
+  }
+
+  .alturasobremi {
+    background-color: red;
+    display: flex;
+    z-index: 2;
+    height: 100%;
+    width: 60%;
+
+    .rouleter {
+      background-color: green;
+      height: 60%;
+    }
+  }
+
+  /* probaremos el sidebar que aparezca  */
+
+  ng-sidebar-container {
+    display: flex;
+  
+    justify-content: space-around;
+    align-items: center;
+  
+    height: 65vh;
+    background-color: transparent;
+  
+    ng-sidebar {
+     height: 150px;
+     width: 300px;
+  
+     background-color: transparent !important;
+  
+     p {
+       color: red;
+     }
+   }
+  }
+
+
+  .containerbtn {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: red;
+    width: 90px;
+    height: 60px;
+
+    .colorbtn {
+      background-color: red;
+      display: block;
+     
+    }
+  
+  }
+  
+}
+
+
+@media screen and (max-width: 200) {
+
+  .container-fluid {
+    border: 3px solid pink;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    .background-card {
+      width: 120%;
+      .grid-container {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .contbarraint {
+   
+    width: 100%;
+    /* background-color: #87a6c6; */
+
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      a {
+        font-size: 1.4vh;
+      }
+    }
+
+    #sobre {
+    }
+
+    #proyecto {
+      margin-left: calc(100% - 160px);
+    }
+
+    #skill {
+      margin-left: calc(100% - 110px);
+    }
+
+    #exp {
+      margin-left: calc(100% - 90px);
+    }
+    /*  .barra__link {
+
+      
+    } */
+  }
+
+  .alt1 {
+    width: 100%;
+    .alturaform {
+      background-color: $c_barra;
+      height: 100%;
+      width: 100%;
+      .form {
+        button {
+          font-size: 2.5vh;
+        }
+
+        width: 90%;
+        height: 70%;
+        background-color: $c_barra;
+        
+      }
+    
+    }
+  }
+
+  .alturasobremi {
+    
+    display: flex;
+    z-index: 2;
+    height: 100%;
+    width: 60%;
+
+    .rouleter {
+      background-color: green;
+      height: 60%;
+    }
+  }
+
+  /* probaremos el sidebar que aparezca  */
+
+  ng-sidebar-container {
+    display: flex;
+  
+    justify-content: space-around;
+    align-items: center;
+  
+    height: 65vh;
+    background-color: transparent;
+  
+    ng-sidebar {
+     height: 150px;
+     width: 300px;
+  
+     background-color: transparent !important;
+  
+     p {
+       color: red;
+     }
+   }
+  }
+
+
+  .containerbtn {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: red;
+    width: 90px;
+    height: 60px;
+
+    .colorbtn {
+      background-color: red;
+      display: block;
+     
+    }
+  
+  }
+
+}
+/* ng container contenedor */
+
+/* ng-container {
+  display: block;
+  background: red;
+} */
+
+
+
+/* ediccion de webapp ng-sidebar */
+
+/* ng-sidebar-container {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+
+  height: 65vh;
+  background-color: transparent;
+
+  ng-sidebar {
+   height: 150px;
+   width: 300px;
+
+   background-color: transparent !important;
+
+   p {
+     color: red;
+   }
+ }
+} */
+ 
+/* .containerbtn {
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  background-color: aquamarine;
+  width: 90px;
+  height: 60px;
+}
+
+.containerbtn button {
+ display: flex;
+  
+  font-size: 13px;
+
+}  */
+
+.colorbtn {
+  display: block;
+  background-color: black;
+  width: 80%;
+  height: 50px;
+
+  font-size: 15px;
+}

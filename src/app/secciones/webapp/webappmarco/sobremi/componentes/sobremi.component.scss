@@ -1,0 +1,1750 @@
+@import "_paletaobscura";
+@import "_paletaaplicacion";
+
+
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 83vh;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  /* NUEVO ELEVATION */
+  backdrop-filter: blur(12px);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  /* NUEVO ELEVATION */
+}
+
+//AQUI VA LAS CLASES PARA EL NGCLASS DE SI ESTA EL VIDEO DE FONDO
+.bgvideo {
+  background: rgba(0, 191, 255, 0.088);
+  background-color: 9s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.nobgvideo {
+  background: linear-gradient(180deg, #02122B 60%, #8CABCA 60%);
+  background-color: 9s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.background-card {
+  width: 90%;
+  height: 90%;
+
+  box-shadow: 0px 0px 10px 10px $c_interno;
+  display: flex;
+  align-items: center;
+
+  .grid-container {
+    height: 100%;
+
+    /*display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen textos"; */
+
+  }
+
+  .bg_videoimg, .bg_videotexto {
+    background: transparent;
+    background-color: 9s cubic-bezier(.68,-0.55,.27,1.55);
+  }
+
+  .bg_novideoimg, .bg_novideotexto {
+   background:#8CABCA;
+   
+   background-color: 9s cubic-bezier(.68,-0.55,.27,1.55);
+  }
+
+  .imagen {
+    display: flex;
+    justify-content: center;
+    height: 58%;
+    background: transparent;
+    padding: 10px;
+  }
+  
+  .imgopacity {
+    opacity: 0.6;
+  }
+
+  img {
+    height: 90%;
+    width: 90%;
+    //border-radius: 30px 0 30px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  .textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 58%;
+    width: 98%;
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon-container_intern {
+        width: 90%;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: all .6s;
+        padding: 10px;
+      } &:hover{
+        transform: scale(1.1);
+      }
+    }
+
+    .txts {
+      height: 50%;
+      display: flex; /* C */
+      justify-content: center; /* C */
+      align-items: center; /* C */
+
+      .txts_interno { /* C */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+       
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        p {
+          text-align: center;
+          color: white;
+        }
+      }
+      
+
+      h2 {
+        font-size: 18px;
+        color: white;
+      }
+
+      .subtitulo {
+        font-size: 17px;
+      }
+
+      p {
+        color: white;
+        font-size: 15px;
+      }
+    }
+    .iconstxt {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      height: 100%;
+      width: 90%;
+
+      .fila {
+        display: flex;
+        justify-content: space-between;
+      }
+      .fecha {
+        display: flex;
+
+        align-items: flex-start;
+
+        width: 100%;
+
+        .iconocontainer {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; 
+
+          width: 30%;
+          height: 100%;
+
+         
+
+          i {
+            /* color: $c_fondoform; */
+            color: #02122B;
+            font-size: 25px;
+          }
+          .fa-calendar-alt {
+            display: inline-block;
+            /* transform: scale(0.5); */
+            transition: 0.5s;
+          }
+
+          .fa-calendar-alt:hover {
+            transform: scale(1.2) translateY(-3px);
+          }
+        }
+
+        .fechacontenedor {
+          display: flex;
+          align-self: center;
+          align-items: center;
+
+          width: 70%;
+          height: 100%;
+
+          .elemento_p {
+            height: 50%;
+            p {
+              font-size: 12px;
+              color: white;
+            }
+          }
+        }
+      }
+
+      .tel {
+        width: 100%;
+
+        .iconocontainer_tel {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 30%;
+          height: 100%;
+          i {
+            color: #02122B;
+            /* color: $c_fondoform; */
+            font-size: 25px;
+          }
+          .fa-phone-square-alt {
+            display: inline-block;
+            /* transform: scale(0.5); */
+            transition: 0.5s;
+          }
+
+          .fa-phone-square-alt:hover {
+            transform: scale(1.2) translateY(-3px);
+          }
+        }
+
+        .telcontenedor {
+          display: flex;
+          align-self: center;
+          align-items: center;
+
+          width: 70%;
+          height: 100%;
+          .elemento_p_tel {
+            height: 50%;
+            p {
+              font-size: 12px;
+              color: white;
+            }
+          }
+        }
+      }
+      .mail {
+        width: 75%;
+        p {
+          color: $c_barra;
+        }
+        i {
+          /* color: #02122B; */
+          /* color: $c_fondoform; */
+          color: #02122B;
+          font-size: 30px;
+        }
+      }
+    }
+    .footer-icons {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      width: 90%;
+      justify-content: space-between;
+      .fab {
+      
+        /* width: 80px; */
+        font-size: 50px;
+       /*  color: #375879d3; */
+        color:#02122B;
+        transition: 0.7s;
+      }
+      /* .fab {
+        display: inline-block;
+        transform: scale(0.5);
+        transition: 0.5s;
+      } */
+
+      .fa-linkedin:hover {
+        background-color: #02122B;
+        transform: scale(1.0) translateX(8px);
+      }
+
+      .fa-github-square:hover {
+        background-color: #02122B;
+        transform: scale(1.0) translateY(8px);
+      }
+
+      .fa-facebook-square:hover {
+        background-color: #02122B;
+        transform: scale(1.0) translateX(-8px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+    max-width: 80%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+  }
+
+  .background-card {
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+     
+      .innergrid_container {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         width: 100%;
+      }
+
+     
+      .imagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 50%;
+        padding: 0;
+        
+       //parent imagecontainer
+      .imagecontainer {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 120px;
+       height: 120px;
+       border-radius: 50%;
+       background: #1919706e;
+      }
+
+
+        .debajoimagen {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;      
+          width: 100%;
+          height: 50%;
+
+
+          .debajoimagentext {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 5px;
+          }
+
+          .otro {
+            background-color: #282C49;
+            height: 50%;
+
+            #circle, #circle2, #circle3 {
+              background: #02122B;
+              height: 50%;
+              width: 50%;
+            }
+
+          }
+
+        }
+
+        img {
+          height: 90%;
+          width: 90%;
+          //border-radius: 50%; 
+          background-image: url("/assets/sobremi/gaston_12.png");
+          background-size: cover;
+          background-repeat: no-repeat; 
+          border-radius: 50%;
+        }
+      }
+
+      .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+        width: 55%;
+
+        .icon-container {
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+
+          .icon-container_intern {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+            height: 90%;
+          }
+        }
+ 
+        .txts {
+          height: 62%;
+          line-height: 25px;
+          .txts_interno {
+            p {
+              text-align: center;
+            }
+          }
+
+          h2 {
+            font-size: 18px;
+
+          }
+
+          .subtitulo {
+            font-size: 17px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+        .iconstxt {
+          /*
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          height: 100%;
+          width: 90%;
+          */
+
+          .fila {
+            display: flex;
+            justify-content: space-between;
+          }
+          .fecha {
+            display: flex;
+
+            align-items: flex-start;
+
+            width: 100%;
+
+            .iconocontainer {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+
+              width: 30%;
+              height: 100%;
+              i {
+               /*  color: $c_fondoform; */
+                font-size: 36px;
+              }
+             
+            }
+
+            .fechacontenedor {
+              display: flex;
+              align-self: center;
+              align-items: center;
+
+              width: 70%;
+              height: 100%;
+
+              .elemento_p {
+                height: 50%;
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+
+          .tel {
+            width: 100%;
+
+            .iconocontainer_tel {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              width: 30%;
+              height: 100%;
+              i {
+               /*  color: $c_fondoform; */
+                font-size: 36px;
+              }
+              /* cambios iconos */
+              
+            }
+
+            .telcontenedor {
+              display: flex;
+              align-self: center;
+              align-items: center;
+              width: 70%;
+              height: 100%;
+              .elemento_p_tel {
+                height: 50%;
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .mail {
+            width: 75%;
+            p {
+              color: $c_barra;
+            }
+            i {
+             /*  color: $c_fondoform; */
+              font-size: 36px;
+            }
+          }
+        }
+        .footer-icons {
+          height: 60px;
+          display: flex;
+          align-items: center;
+          .fab {
+            /* width: 80px; */
+            font-size: 36px;
+            color: #02122B;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+  .container-fluid {
+    max-width: 95%;
+    height: 72vh;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    /* background: linear-gradient(180deg, $c_barra 60%, $c_textoform 60%); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-card {
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 50%;
+   
+        padding: 10px;
+
+        img {
+          height: 90%;
+          width: 90%;
+          //border-radius: 30px 0 30px 0px;
+          //background-image: url("/assets/sobremi/fondosmart.png"); 
+          
+        }
+      }
+
+      .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* C - CENTER */
+        height: 90%;
+        width: 55%;
+
+        .icon-container{
+
+          .icon-container_intern {
+            width: 90%;
+          }
+        }
+
+        .txts {
+          height: 50%;
+          line-height: 23px;
+
+          .txts_interno {
+            p {
+              text-align: center;
+            }
+          }
+
+          h2 {
+            font-size: 18px;
+          }
+
+          .subtitulo {
+            font-size: 17px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+        .iconstxt {
+          /*
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          */
+
+          .fila {
+            display: flex;
+            justify-content: space-between;
+          }
+          .fecha {
+            display: flex;
+
+            align-items: flex-start;
+
+            width: 100%;
+
+            .iconocontainer {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+
+              width: 30%;
+              height: 100%;
+              i {
+                /* color: $c_fondoform; */
+                font-size: 34px;
+              }
+            }
+
+            .fechacontenedor {
+              display: flex;
+              align-self: center;
+              align-items: center;
+
+              width: 70%;
+              height: 100%;
+
+              .elemento_p {
+                height: 50%;
+                p {
+                  font-size: 1.1vw;
+                }
+              }
+            }
+          }
+
+          .tel {
+            width: 100%;
+
+            .iconocontainer_tel {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              width: 30%;
+              height: 100%;
+              i {
+                /* color: $c_fondoform; */
+                font-size: 34px;
+              }
+            }
+
+            .telcontenedor {
+              display: flex;
+              align-self: center;
+              align-items: center;
+
+              width: 70%;
+              height: 100%;
+              .elemento_p_tel {
+                height: 50%;
+                p {
+                  font-size: 1.1vw;
+                }
+              }
+            }
+          }
+          .mail {
+            width: 75%;
+            p {
+              color: $c_barra;
+            }
+            i {
+             /*  color: $c_fondoform; */
+              font-size: 34px;
+            }
+          }
+        }
+        .footer-icons {
+          height: 60px;
+          display: flex;
+          align-items: center;
+          .fab {
+            /* width: 80px; */
+            font-size: 34px;
+            /* color: #375879d3; */
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+
+  .bg_novideotexto {
+    background: #282C49 !important;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    width: 80%;
+    height: 83vh;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* background: #282C49; */
+  
+  }
+
+  .background-card {
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .imagen {
+        /* grid-area: imagen; */
+        width: 50%;
+        height: 88%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        img {
+          height: 90%;
+          width: 90%;
+          //border-radius: 30px 0 30px 0px;
+          //background-image: url("/assets/sobremi/fondosmart.png");
+        }
+      }
+
+      .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; /* C - CENTER */
+        align-items: center; /* C - NONE  */
+        height: 90%;
+        width: 55%;
+     
+        .icon-container {
+
+          .icon-container_intern {
+            width: 90%;
+          }
+        }
+        
+        .txts {
+          height: 53%;
+          line-height: 23px;
+
+          .txts_interno {
+            p {
+              text-align: center;
+            }
+          }
+
+          h2 {
+            font-size: 16px;
+          }
+
+          .subtitulo {
+            font-size: 15px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+        .icon-container {
+          width: 95%;
+
+          .iconstxt {
+            /*
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            */
+
+            .fila {
+              display: flex;
+              justify-content: space-between;
+            }
+            .fecha {
+              display: flex;
+
+              align-items: flex-start;
+
+              width: 100%;
+
+              .iconocontainer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                width: 30%;
+                height: 100%;
+                i {
+                  /* color: $c_fondoform; */
+                  font-size: 30px;
+                }
+              }
+
+              .fechacontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+
+                width: 70%;
+                height: 100%;
+
+                .elemento_p {
+                  height: 50%;
+                  p {
+                    font-size: 1.8vw;
+                  }
+                }
+              }
+            }
+
+            .tel {
+              width: 100%;
+
+              .iconocontainer_tel {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 30%;
+                height: 100%;
+                i {
+                  /* color: $c_fondoform; */
+                  font-size: 30px;
+                }
+              }
+
+              .telcontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+                width: 70%;
+                height: 100%;
+                .elemento_p_tel {
+                  height: 50%;
+                  p {
+                    font-size: 1.8vw;
+                  }
+                }
+              }
+            }
+            .mail {
+              width: 75%;
+              p {
+                color: $c_barra;
+              }
+              i {
+                /* color: $c_fondoform; */
+                font-size: 30px;
+              }
+            }
+          }
+          .footer-icons {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .fab {
+              /* width: auto; */
+              font-size: 30px;
+              /* color: #375879d3; */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    height: 83vh;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* background: #282C49; */
+
+  }
+
+  .background-card {
+    width: 100%;
+    height: 90%;
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+      display: flex;
+
+      .imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 50%;
+        padding: 2px;
+
+        /* fondo de imagen */
+        img {
+          height: 90%;
+          width: 90%;
+          //border-radius: 30px 0 30px 0px;
+          //background-image: url("/assets/sobremi/fondosmart.png");
+        }
+      }
+
+      .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; /* C - CENTER  */
+        align-items: center; /* C - NONE  */
+        height: 90%;
+        width: 60%;
+
+        .icon-container {
+          
+          .icon-container_intern {
+            width: 90%;
+            transition: all 200ms;
+          } &:hover{
+            transform: scale(1);
+           
+          }
+        }
+
+        .txts {
+          height: 48%;
+          line-height: 31px;
+          background-color: transparent;
+
+          .txts_interno {
+            width: 80%;
+            p {
+              text-align: center;
+            }
+          }
+
+
+          h2 {
+            font-size: 19px;
+          }
+
+          .subtitulo {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 17px;
+          }
+        }
+        .iconstxt {
+          /*
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          */
+          background-color: transparent;
+          .fila {
+            display: flex;
+            justify-content: space-between;
+          }
+          .fecha {
+            display: flex;
+
+            align-items: flex-start;
+
+            width: 100%;
+
+            .iconocontainer {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              background-color: transparent;
+              width: 30%;
+              height: 100%;
+              i {
+                /* color: $c_fondoform; */
+                font-size: 34px;
+              }
+            }
+
+            .fechacontenedor {
+              display: flex;
+              align-self: center;
+              align-items: center;
+              width: 70%;
+              height: 100%;
+              .elemento_p {
+                height: 50%;
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+
+          .tel {
+            width: 100%;
+            .iconocontainer_tel {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+
+              width: 30%;
+              height: 100%;
+              i {
+                /* color: $c_fondoform; */
+                font-size: 34px;
+              }
+            }
+
+            .telcontenedor {
+              display: flex;
+              align-self: center;
+              align-items: center;
+              width: 70%;
+              height: 100%;
+              .elemento_p_tel {
+                height: 50%;
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .mail {
+            width: 75%;
+            p {
+              color: $c_barra;
+            }
+            i {
+              /* color: $c_fondoform; */
+              font-size: 34px;
+            }
+          }
+        }
+        .footer-icons {
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .fab {
+            /* width: 80px; */
+            font-size: 34px;
+           /*  color: #375879d3; */
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 779px) {
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    height: 75vh;
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 30px;
+    /* background: #282C49; */
+  }
+
+  .background-card {
+    width: 100%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+      grid-template-areas: "imagen textos";
+      display: flex;
+
+      .imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 42%;
+        padding: 2px;
+
+        img {
+          height: 88%;
+          width: 88%;
+          //border-radius: 30px 0 30px 0px;
+          //background-image: url("/assets/sobremi/fondosmart.png");
+        }
+      }
+
+      .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 58%;
+          .icon-container_intern {
+            background: transparent;
+            width: 90%;
+          } &:hover{
+            transform: scale(1);
+          }
+        
+        .txts {
+          width: 90%;
+          height: 45%;
+          line-height: 25px;
+          background-color: transparent;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .txts_interno {
+            width: 100%;
+            p {
+              text-align: center;
+            }
+          }
+
+          h2 {
+            font-size: 19px;
+          }
+
+          .subtitulo {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 17px;
+          }
+        }
+
+        .icon-container {
+          height: 40%;
+          width: 100%;
+          background: transparent;
+          padding: 10px;
+          .iconstxt {
+            /*
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            */
+            background-color: transparent;
+            .fila {
+              display: flex;
+              justify-content: space-between;
+            }
+            .fecha {
+              display: flex;
+
+              align-items: flex-start;
+
+              width: 100%;
+
+              .iconocontainer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: transparent;
+                width: 30%;
+                height: 100%;
+                i {
+                  /* color: $c_fondoform; */
+                  font-size: 30px;
+                }
+              }
+
+              .fechacontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+
+                width: 70%;
+                height: 100%;
+
+                .elemento_p {
+                  height: 50%;
+                  p {
+                    font-size: 11px;
+                  }
+                }
+              }
+            }
+
+            .tel {
+              width: 100%;
+
+              .iconocontainer_tel {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 30%;
+                height: 100%;
+                i {
+                  /* color: $c_fondoform; */
+                  font-size: 30px;
+                }
+              }
+
+              .telcontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+                width: 70%;
+                height: 100%;
+                .elemento_p_tel {
+                  height: 50%;
+                  p {
+                    font-size: 11px;
+                  }
+                }
+              }
+            }
+            .mail {
+              width: 75%;
+              p {
+                color: $c_barra;
+              }
+              i {
+                /* color: $c_fondoform; */
+                font-size: 30px;
+              }
+            }
+          }
+          .footer-icons {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .fab {
+              /* width: 80px; */
+              font-size: 30px;
+              /* color: #375879d3; */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 73vh;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+
+  .background-card {
+    width: 100%;
+    height: 90%;
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      .imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 64%;
+        width: calc(90vw - 68px);
+        top: 118px;
+        padding: 2px;
+
+        img {
+          height: 80%;
+          opacity: 0.8;
+          width: 80%;
+          //z-index: 500;
+          //background-image: url("/assets/sobremi/fondosmart2.png");
+        }
+      }
+
+      .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+
+        height: 100%;
+        width: 100%; 
+        padding: 0px;
+        margin-left: 0px;
+
+        .icon-container {
+          
+          .icon-container_intern {
+            width: 100%;
+          } &:hover{
+            transform: scale(1);
+          }
+        }
+
+        .txts {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: space-around;
+          background-color: transparent;
+          width: 80%;
+          height: 40%;
+
+          .txts_interno {
+            width: 100%;
+            p {
+              text-align: center;
+            }
+          }
+
+          h2 {
+            font-size: 11px;
+          }
+
+          .subtitulo {
+            font-size: 15px;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 1rem;
+          }
+        }
+
+        .icon-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: space-around;
+          background: transparent;
+          width: 80%;
+          height: 40%;
+          padding: 0px;
+
+          .iconstxt {
+            /*
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            */
+
+            .fila {
+              display: flex;
+              justify-content: space-between;
+            }
+            .fecha {
+              display: flex;
+              align-items: flex-start;
+              width: 100%;
+              .iconocontainer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 30%;
+                height: 100%;
+                i {
+                  /* color: burlywood; */
+                  font-size: 25px;
+                }
+              }
+
+              .fechacontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+
+                width: 70%;
+                height: 100%;
+
+                .elemento_p {
+                  height: 50%;
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+
+            .tel {
+              width: 100%;
+              .iconocontainer_tel {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 30%;
+                height: 100%;
+                i {
+                  /* color: burlywood; */
+                  font-size: 25px;
+                }
+              }
+
+              .telcontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+                width: 70%;
+                height: 100%;
+                .elemento_p_tel {
+                  height: 50%;
+                  p {
+                    font-size: 11px;
+                  }
+                }
+              }
+            }
+            .mail {
+              width: 75%;
+              p {
+                color: $c_barra;
+              }
+              i {
+                /* color: burlywood; */
+                font-size: 30px;
+              }
+            }
+          }
+          .footer-icons {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            .fab {
+              /* width: 80px; */
+              font-size: 25px;
+             /*  color: burlywood; */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .container-fluid {
+    max-width: 100%;
+    height: 83vh;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    background: linear-gradient(180deg, $c_barra 60%, $c_textoform 60%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-card {
+    width: 100%;
+    height: 90%;
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+
+      .imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+        height: 82%;
+        width: calc(90vw - 30px);
+       
+        /* background: $c_textoform; */
+        padding: 2px;
+
+        img {
+          height: 90%;
+          opacity: 0.8;
+          width: 90%;
+          //background-image: url("/assets/sobremi/fondosmart2.png");
+          
+        }
+      }
+
+      .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin-left: 0px;
+
+        .icon-container {
+          
+          .icon-container_intern {
+            width: 100%;
+            transition: all 0s;
+          } &:hover{
+            transform: scale(1);
+          }
+        }
+
+        .txts {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: space-around;
+          background-color: transparent;
+          width: 80%;
+          height: 40%;
+
+          .txts_interno {
+            width: 100%;
+            p {
+              text-align: center;
+            }
+          }
+
+          h2 {
+            font-size: 14px;
+          }
+
+          .subtitulo {
+            font-size: 15px;
+          }
+
+          p {
+            font-size: 13px;
+          }
+        }
+
+        .icon-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: space-around;
+          background: transparent;
+          width: 80%;
+          height: 40%;
+          padding: 0px;
+
+          .iconstxt {
+            /*
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            */
+
+            .fila {
+              display: flex;
+              justify-content: space-between;
+            }
+            .fecha {
+              display: flex;
+
+              align-items: flex-start;
+
+              width: 100%;
+
+              .iconocontainer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                width: 30%;
+                height: 100%;
+                i {
+                 /*  color: burlywood; */
+                  font-size: 25px;
+                }
+              }
+
+              .fechacontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+
+                width: 70%;
+                height: 100%;
+
+                .elemento_p {
+                  height: 50%;
+                  p {
+                    color: black;
+                  }
+                }
+              }
+            }
+
+            .tel {
+              width: 100%;
+
+              .iconocontainer_tel {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 30%;
+                height: 100%;
+                i {
+                  /* color: burlywood; */
+                  font-size: 25px;
+                }
+              }
+
+              .telcontenedor {
+                display: flex;
+                align-self: center;
+                align-items: center;
+                width: 70%;
+                height: 100%;
+                .elemento_p_tel {
+                  height: 50%;
+                  p {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+            .mail {
+              width: 75%;
+              p {
+                color: $c_barra;
+              }
+              i {
+                /* color: burlywood; */
+                font-size: 30px;
+              }
+            }
+          }
+          .footer-icons {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            .fab {
+              /* width: 80px; */
+              font-size: 25px;
+           /*    color: burlywood; */
+            }
+          }
+        }
+      }
+    }
+  }
+}

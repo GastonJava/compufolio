@@ -1,0 +1,149 @@
+/* TOP RECTANGULO ABAJO DEL DEG */
+/* .work__grid--overlay {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 90px;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $c_textotitulo;
+} */
+
+/* TOP RECTANGULO ABAJO DEL DEG */
+/* .work__grid--overlay > h1 {
+
+
+  color: #8d93ab;
+  text-shadow: 0px 5px 10px #44444d;
+  font-weight: 100;
+  text-transform: uppercase;
+} */
+.btnsobre_iconbutton {
+  background: red;
+}
+
+
+/* boton del menu */
+.linea {
+  width: 25px;
+  height: 3px;
+  background: #0B192F;
+  margin: 3px;
+}
+
+/* original hamburger */
+/* .btn {
+  cursor: pointer;
+  margin: 20px;
+}
+
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background: black;
+  margin: 3px;
+  position: relative;
+} */
+/* original hamburger */
+
+
+.ng-sidebar--opened.ng-sidebar--over {
+  box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
+}
+
+/*  editamos el formulario el boton y todo */
+.hidden {
+	display: none
+}
+.visible {
+	display: block
+}
+.center-text {
+	text-align: center
+}
+/* editamos el formulario el boton y todo */
+
+.container-fluid {
+  height: 90vh;
+  /* height: calc(100vh - 100px); */
+}
+
+
+
+------------------------------------------
+
+
+.alt1 {
+    height: calc(100vh - 160px);
+  
+    .alturaform {
+      background: $c_interno;
+      /* margin-top: calc(100vh - 878px); */
+    }
+  
+    .alturasobremi {
+      overflow: hidden;
+      /* margin-top: calc(2vh); */
+      display: flex;
+      z-index: 100;
+      
+  
+      height: 100%;
+      width: 60%;
+  
+      .rouleter {
+        width: 100%;
+        height: 90vh;
+        
+      } 
+  
+     
+    }
+  
+    /* ACA VIENE LA CONFIGURACION DEL NG-SIDEBAR */
+    ::ng-deep aside {
+      background-color:transparent;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    
+    
+    .ng-sidebar__content {
+      background: whitesmoke;
+    }
+    
+    .cambiar{
+      background-color: black;
+    }
+    
+    
+    ng-sidebar-container {
+    
+      display: flex;
+      
+      justify-content: space-around;
+    
+      height: 100vh;
+    
+     /* background-color: transparent; */
+    
+     ng-sidebar {
+      
+      height: 90%;
+     /*  background-color: transparent !important; */
+    
+      p {
+        color: red;
+      }
+      
+     }
+    
+    }
+  
+  }
+  

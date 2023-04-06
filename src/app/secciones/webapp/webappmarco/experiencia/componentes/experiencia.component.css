@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.principal {
+  width: 100%;
+  height: 70vh;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #052f54;
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+
+.principal .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("src/assets/experiencia/fondoazuloscuro_bajacalidad.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.principal .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  /* background-color: green; */
+}
+
+.principal .container_secundario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  /* background-color: khaki; */
+  width: 50%;
+  height: 80%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  background-color: rgba(17, 25, 40, 0.6);
+}
+
+.principal .containera1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #5984C68A;
+  /*  background-color: blue; */
+}
+
+.principal .containera1 .icono {
+  width: 30%;
+  text-align: center;
+  /*  background: white; */
+}
+
+.principal .containera1 .icono i {
+  color: #8CABCA;
+}
+
+.principal .containera1 .parrafo {
+  width: 70%;
+  /* background-color: yellow; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.principal .containera1 .parrafo p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bolder;
+  /* background: blueviolet; */
+  margin: 0;
+  color: #8CABCA;
+  cursor: default;
+}
+
+.principal .containera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  width: 95%;
+  border-right: 2px solid #5984C62B;
+  /* background-color: red; */
+}
+
+.principal .titulomain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  /* background-color: grey; */
+}
+
+.principal .titulomain h1 {
+  /* background-color: #052f54; */
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-align: center;
+  /* color: red; */
+}
+
+.principal .linkaimg {
+  height: 30%;
+  /* background-color: pink; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  /*  width: 400px;
+    height: 200px; */
+}
+
+.principal .linkaimg a {
+  background-color: #052f54;
+  list-style-type: none;
+  text-decoration: none;
+  border: 0;
+  color: grey;
+  padding: 5px;
+}
+
+.principal .linkaimg a h1 {
+  font-size: 1rem;
+}
+
+.principal .linkaimg a:hover {
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+.principal .typewriter h1 {
+  color: #8CABCA;
+  /* font-family: "Gluten", cursive; */
+  font-family: 'IBM Plex Mono', monospace;
+  border-right: 0.12em solid #438999;
+  margin: 0 auto;
+  letter-spacing: 0.12em;
+  overflow: hidden;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /* background-color: transparent; */
+  -webkit-animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+          animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+  line-height: 0.8;
+  cursor: default;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    /* border-color: #438999; */
+    border-color: white;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    /* border-color: #438999; */
+    border-color: white;
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1920px) {
+  .principal .container_secundario {
+    width: 50%;
+  }
+  .principal .parrafo p {
+    font-size: 12px;
+  }
+  .principal .typewriter h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    border-right: 0.12em solid #438999;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .principal .container_secundario {
+    width: 50%;
+  }
+  .principal .parrafo p {
+    font-size: 12px;
+  }
+  .principal .typewriter h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    border-right: 0.12em solid #438999;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .principal .container_secundario {
+    width: 50%;
+  }
+  .principal .parrafo p {
+    font-size: 12px;
+  }
+  .principal .typewriter h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    border-right: 0.12em solid #438999;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .principal .container_secundario {
+    width: 50%;
+  }
+  .principal .parrafo p {
+    font-size: 12px;
+  }
+  .principal .typewriter h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    border-right: 0.12em solid #438999;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .principal .container_secundario {
+    width: 50%;
+  }
+  .principal .parrafo p {
+    font-size: 12px;
+  }
+  .principal .typewriter h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    border-right: 0.12em solid #438999;
+    font-size: 3.4vw;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .principal .container_secundario {
+    width: 60%;
+  }
+  .principal .parrafo p {
+    font-size: 12px;
+  }
+  .principal .typewriter h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    border-right: 0.12em solid #438999;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .principal .container_secundario {
+    width: 90%;
+  }
+  .principal .parrafo p {
+    font-size: 12px;
+  }
+  .principal .typewriter h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    border-right: 0.12em solid #438999;
+    font-size: 6vw;
+  }
+}
+/*# sourceMappingURL=experiencia.component.css.map */

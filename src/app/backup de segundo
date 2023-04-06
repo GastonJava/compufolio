@@ -1,0 +1,20 @@
+             <div class="main__img--ctral">
+                <div class="main__img--izqcontainer">
+                  <img src="../assets/webdesign.png" class="img" alt="escritorio">
+                </div>
+                <div class="main__img--izqtxtcontainer text-center">
+                  <p>Me parece que tengan unos dias
+                  a mi poarecer horge se quiere ir
+                  todos los datos son </p>
+                </div>
+              </div>
+              <div class="main__img--der">
+                <div class="main__img--izqcontainer">
+                  <img src="../assets/astronauta.png" class="img" alt="escritorio">
+                </div>
+                <div class="main__img--izqtxtcontainer text-center">
+                  <p>Me parece que tengan unos dias
+                  a mi poarecer horge se quiere ir
+                  todos los datos son </p>
+                </div>
+              </div>

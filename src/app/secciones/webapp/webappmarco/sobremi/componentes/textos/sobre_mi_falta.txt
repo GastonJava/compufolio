@@ -1,0 +1,519 @@
+@media screen and (max-width: 940px) {
+  .container-fluid {
+    display: flex; /* aparece o no */
+    height: 83vh;
+    padding-top: 10px;
+    box-sizing: border-box;
+    /* background: $c_barra; */
+    border-radius: 30px;
+
+    background: linear-gradient(180deg, $c_barra 60%, $c_textoform 60%);
+
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .background-card {
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-rows: 1fr;
+      /* gap: 5px 5px; */
+      grid-template-areas: "imagen textos";
+    }
+
+    .imagen {
+      width: 80%;
+      position: absolute;
+      grid-area: imagen;
+      background-color: violet;
+      /*  border: 5px solid red; */
+      /*  height: calc(62% - 20px); */
+      height: 90%;
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      /*  background: $c_textoform; */
+      padding: 5px;
+
+      img {
+        opacity: 0.1;
+        z-index: 10;
+        width: 98%;
+        height: 98%;
+
+        border-radius: 30px 0 30px 0px;
+      }
+    }
+
+    .textos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      background-color: transparent;
+      position: absolute;
+      /* background: $c_textoform; */
+      grid-area: textos;
+      /* height: calc(62% - 20px); */
+
+      width: 72%;
+      height: 98%;
+
+      .txts {
+        padding: 12px;
+        height: 50%;
+        background: red;
+        /* SOBREPONER TEXTOS - IMG */
+        /* small, h2, p {
+          z-index: 10;
+        } */
+
+        h2 {
+          font-size: 13px;
+          color: $c_barra;
+        }
+        p {
+          color: $c_barra;
+          font-size: 12px;
+        }
+      }
+
+      small,
+      h2,
+      p {
+        z-index: 80;
+        color: wheat;
+      }
+
+      .iconstxt {
+        background-color: violet;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .fila {
+          display: flex;
+          justify-content: space-around;
+        }
+        .fecha {
+          width: 90%;
+          p {
+            font-size: 1.5vh;
+            color: $c_barra;
+          }
+          i {
+            color: $c_fondoform;
+          }
+        }
+        .tel {
+          width: 90%;
+          p {
+            color: $c_barra;
+            font-size: 1.5vh;
+          }
+          i {
+            color: $c_fondoform;
+            font-size: 28px;
+          }
+        }
+        .mail {
+          padding: 2px;
+          width: 90%;
+          p {
+            font-size: 1.2vh;
+            color: $c_barra;
+          }
+          i {
+            color: $c_fondoform;
+            font-size: 30px;
+          }
+        }
+      }
+      .footer-icons {
+        background: grey;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .fab {
+          width: 60px;
+          font-size: 30px;
+          color: #375879d3;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container-fluid {
+    display: flex; /* aparece o no */
+    height: 83vh;
+    padding-top: 10px;
+    box-sizing: border-box;
+    /* background: $c_barra; */
+    border-radius: 30px;
+
+    background: linear-gradient(180deg, $c_barra 60%, $c_textoform 60%);
+
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .background-card {
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-rows: 1fr;
+      /* gap: 5px 5px; */
+      grid-template-areas: "imagen textos";
+    }
+
+    .imagen {
+      width: 80%;
+      position: absolute;
+      grid-area: imagen;
+      background-color: violet;
+      /*  border: 5px solid red; */
+      /*  height: calc(62% - 20px); */
+      height: 90%;
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      /*  background: $c_textoform; */
+      padding: 5px;
+
+      img {
+        opacity: 0.1;
+        z-index: 10;
+        width: 98%;
+        height: 98%;
+
+        border-radius: 30px 0 30px 0px;
+      }
+    }
+
+    .textos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      background-color: transparent;
+      position: absolute;
+      /* background: $c_textoform; */
+      grid-area: textos;
+      /* height: calc(62% - 20px); */
+
+      width: 72%;
+      height: 98%;
+
+      .txts {
+        padding: 12px;
+        height: 50%;
+        background: red;
+        /* SOBREPONER TEXTOS - IMG */
+        /* small, h2, p {
+          z-index: 10;
+        } */
+
+        h2 {
+          font-size: 13px;
+          color: $c_barra;
+        }
+        p {
+          color: $c_barra;
+          font-size: 12px;
+        }
+      }
+
+      small,
+      h2,
+      p {
+        z-index: 80;
+        color: wheat;
+      }
+
+      .iconstxt {
+        background-color: violet;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .fila {
+          display: flex;
+          justify-content: space-around;
+        }
+        .fecha {
+          width: 90%;
+          p {
+            font-size: 1.5vh;
+            color: $c_barra;
+          }
+          i {
+            color: $c_fondoform;
+          }
+        }
+        .tel {
+          width: 90%;
+          p {
+            color: $c_barra;
+            font-size: 1.5vh;
+          }
+          i {
+            color: $c_fondoform;
+            font-size: 28px;
+          }
+        }
+        .mail {
+          padding: 2px;
+          width: 90%;
+          p {
+            font-size: 1.2vh;
+            color: $c_barra;
+          }
+          i {
+            color: $c_fondoform;
+            font-size: 30px;
+          }
+        }
+      }
+      .footer-icons {
+        background: grey;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .fab {
+          width: 60px;
+          font-size: 30px;
+          color: #375879d3;
+        }
+      }
+    }
+  }
+}
+
+ @media screen and (max-width: 400px) {
+
+  .container-fluid {
+    display: flex; /* aparece o no */
+    height: 65vh;
+    width: 250px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    /* background: $c_barra; */
+    border-radius: 30px;
+
+    background: linear-gradient(180deg, $c_barra 60%, $c_textoform 60%);
+
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .background-card {
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px 10px $c_interno;
+    display: flex;
+    align-items: center;
+
+    .grid-container {
+      height: 100%;
+
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-rows: 1fr;
+      /* gap: 5px 5px; */
+      grid-template-areas: "imagen textos";
+    }
+
+    .imagen {
+      width: 80%;
+      position: absolute;
+      grid-area: imagen;
+      background-color: violet;
+      /*  border: 5px solid red; */
+      /*  height: calc(62% - 20px); */
+      height: 90%;
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      /*  background: $c_textoform; */
+      padding: 5px;
+
+      img {
+        opacity: 0.1;
+        z-index: 10;
+        width: 98%;
+        height: 98%;
+
+        border-radius: 30px 0 30px 0px;
+      }
+    }
+
+    .textos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      background-color: transparent;
+      position: absolute;
+      /* background: $c_textoform; */
+      grid-area: textos;
+      /* height: calc(62% - 20px); */
+
+      width: 72%;
+      height: 98%;
+
+      .txts {
+        padding: 12px;
+        height: 50%;
+        background: red;
+        /* SOBREPONER TEXTOS - IMG */
+        /* small, h2, p {
+          z-index: 10;
+        } */
+
+        h2 {
+          font-size: 13px;
+          color: $c_barra;
+        }
+        p {
+          color: $c_barra;
+          font-size: 12px;
+        }
+      }
+
+      small,
+      h2,
+      p {
+        z-index: 80;
+        color: wheat;
+      }
+
+      .iconstxt {
+        background-color: violet;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .fila {
+          display: flex;
+          justify-content: space-around;
+        }
+        .fecha {
+          width: 90%;
+          p {
+            font-size: 1.5vh;
+            color: $c_barra;
+          }
+          i {
+            color: $c_fondoform;
+          }
+        }
+        .tel {
+          width: 90%;
+          p {
+            color: $c_barra;
+            font-size: 1.5vh;
+          }
+          i {
+            color: $c_fondoform;
+            font-size: 28px;
+          }
+        }
+        .mail {
+          padding: 2px;
+          width: 90%;
+          p {
+            font-size: 1.2vh;
+            color: $c_barra;
+          }
+          i {
+            color: $c_fondoform;
+            font-size: 30px;
+          }
+        }
+      }
+      .footer-icons {
+        background: grey;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .fab {
+          width: 60px;
+          font-size: 30px;
+          color: #375879d3;
+        }
+      }
+    }
+  }
+ }
+
+  @media screen and (max-width: 320) {
+   .grid {
+     border: 3px solid violet;
+    }
+  }
+
+  /* sobre mi esto es del menu side */
+
+  /* ng-sidebar-container {
+    display: flex;
+ 
+    justify-content: space-around;
+    align-items: center;
+ 
+    height: 400px;
+    background-color: green;
+ 
+    ng-sidebar {
+     height: 150px;
+     width: 300px;
+ 
+     background-color: blue !important;
+ 
+     p {
+       color: red;
+     }
+    } */
+ 
+
+   /*   ng-sidebar-content{
+    width: 150px;
+    background-color: aqua;
+   } */
+
+/*  .containerbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width: 150px;
+    height: 100px;
+  }
+} */

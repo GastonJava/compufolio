@@ -1,0 +1,51 @@
+<!-- <ng-container class="container-fluid"> -->
+<!-- <app-navbar></app-navbar> -->
+
+<!-- hero -->
+
+<!-- <app-hero></app-hero>  -->
+<!-- id="hero" -->
+
+<!-- Main -->
+<!-- <app-main></app-main>  -->
+
+<!-- <app-main-nuevo></app-main-nuevo> -->
+<!-- (click)="scrollable('webapp')" -->
+
+<!-- (scroll)="scrollHandler($event)" -->
+
+<!--- <h1>hola world: {{bdback}}</h1> -->
+
+<!-- <section [ngClass]="bdback ? 'body_sun' : 'body_moon'"> -->
+
+  <!-- BOTON SWITCH CAMBIO BACKGROUND TEMPLATES -->
+  <app-botonswitch></app-botonswitch>
+
+
+<!-- <particles id= "particles" [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles> -->
+ <ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"
+              (particlesInit)="particlesInit($event)"></ng-particles>
+
+<div #arriba class="nuevohero" id="nuevohero">
+  <app-nuevohero (dioClick)="scrollView(div)"></app-nuevohero> <!-- (dioClick)="scrollView(div)" -->
+</div>
+
+<!-- <app-testinghero></app-testinghero> -->
+
+<div #div id="webapp">
+  <app-webappmarco (dioClickFlecha)="scrollView(arriba)"></app-webappmarco>
+</div>
+
+<!-- TESTING PURPOSEEEEEEEEEEEEEE
+<div #div id="webapp">
+  <app-webappmarco (dioClickFlecha)="scrollView()"></app-webappmarco>
+</div> -->
+
+<!--- </section> -->
+
+<!-- <app-heladeriaform></app-heladeriaform> -->
+
+<!-- work -->
+<!-- <app-work></app-work> -->
+
+<!-- <app-sobremi></app-sobremi> -->

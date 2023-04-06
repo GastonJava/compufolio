@@ -1,0 +1,72 @@
+<div class="hero">
+  <video muted autoplay loop id="video"> <!-- poster="assets/nuevohero/gaston.jpg" --> <!-- preload="metadata" -->
+    <source src="assets/nuevohero/programacion7.mp4" type="video/mp4">
+  </video>
+   
+ <div class="hero__contenido">
+   
+  <div class="hero__textos">
+    <div class="hero__textosoverlay">
+
+      <div class="hero__textoscontainer">
+        <h1 class="hero__titulo" >PONCE GASTON </h1>   <!-- (click)="scroll(div)" -->
+       <p class="hero__subtitulo">Desarrollador Front-End Junior</p>
+       <p class="hero__subtitulo1">
+         Estudiante analista de sistemas enfocado en angular y netcore  
+       </p>
+      </div>
+
+      <div class="hero__flechacontainer">
+        <!-- <a class="hero__link"><img src="assets/nuevohero/flecha.png" alt="flecha"></a> -->
+
+        <!-- PROBANDO NUEVO BOTON -->
+        <span class="slidedown" (click)="dioClick.emit()">
+          <span class="arriba__abajo colorblanco"></span>
+        </span>
+
+        <span class="flecha">
+
+        </span>
+        
+      </div>
+
+      <!-- <br> -->
+
+      <div style="margin-top:5000px;" class="hero__footer">
+        <div class="hero__imagenes">
+
+          <div class="img-container hover1">
+            <!-- <h1 class="navtext" (click)="dioClick.emit()">CONTACTO</h1> -->
+
+        <!--  <img (click)="dioClick.emit()" src="assets/nuevohero/1.png" class="uno">
+
+         -->          
+        </div>
+
+          <div class="img-container hover2">
+            <!-- <h1 class="navtext"> OTRO LINK</h1> -->
+            <!-- <img src="assets/nuevohero/2.png" alt="" class="dos"> -->
+          </div>
+          
+          <div class="img-container hover3" #div>
+            <!-- <h1 class="navtext" (click)="dioClick.emit()"> OTRO LINK</h1> -->
+            <!-- img src="assets/nuevohero/3.png" alt="" class="tres"> -->
+          </div>
+         
+        </div>
+      </div>
+
+     
+     
+      <!-- <div class="hero__imgcontainer">
+        <img src="assets/nuevohero/logo1.png" alt="">
+      </div> -->
+    </div>
+    <br>
+    <!-- <div class="hero__flechacontainer">
+      <a class="hero__link"><img src="assets/nuevohero/flecha.png" alt="flecha"></a>
+
+    </div> -->
+   </div>
+ </div>
+</div>

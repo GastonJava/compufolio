@@ -1,0 +1,54 @@
+
+<!-- <ngb-carousel>
+    <ng-template *ngFor="let lista of listas" ngbSlide>
+      <div class="caruselwrapper">
+          <img src="{{lista.img}}" alt="listado de imagene 1">
+          <div class="booleano">
+            <h1>el boleano es: {{enviandoDatos}}</h1>
+           
+              <div class="img__noenvia" *ngIf="!enviandoDatos">
+                <img src="assets/español.png" alt="no imagen" *ngIf="!imgres">
+              </div>
+                
+              
+             <img [src]="imgres"  alt="no hay imagen">
+          </div>
+         
+          <img src="assets/español.png" alt="no imagen"  [hidden]="!enviandoDatos">
+                
+   </div>
+      <div class="carousel-caption">
+          <h3>{{lista.name}}</h3>
+          <p>{{lista.desc}}</p>
+      </div>
+    </ng-template>
+</ngb-carousel> -->
+
+<div class="booleano">
+  <div class="booleanointerno">
+    <div class="titulobooleano">
+      <h5>el boleano es: {{enviandoDatos}}</h5>
+    </div>
+    
+    <div class="img__noenvia" *ngIf="!enviandoDatos">
+      <img src="assets/español.png" alt="no imagen" *ngIf="!imgres">
+    </div>
+  
+    <div class="imgfromurl">
+      <img [src]="imgres"  alt="no hay imagen">
+      <p *ngIf="imgres">Imagenes Randoms</p>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+<!-- <button class="btn btn-danger" (click)="unsubscribe()" value="cancelar subscripcion" *ngIf="enviandoDatos">
+
+ cancelar Envio
+</button>
+
+<button class="btn btn-success" (click)="subscribir()" value="retomar subscripcion" >
+  volver a enviar
+</button> -->

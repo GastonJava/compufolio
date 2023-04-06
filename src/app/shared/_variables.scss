@@ -1,0 +1,54 @@
+// COLORES VARIABLES
+
+// gradiante hero (left, right, left), cards efectos (left, bottom, right)
+/* $colorhero1:#bbd2c5;
+$colorhero2:#536976; 
+$colorhero3:#292e49; */
+
+// gradiante img hero main top y bottom
+/* $colorimghero1:#b0dbc3;
+$colorimghero2:#9abcce;
+$colorimghero3:#5f5f64; */
+
+/* $rojo: blue; */
+
+//GRADIANTE LISTAS
+/* $gradiantehero: $colorhero1, $colorhero2, $colorhero3;
+$gradianteimghero: $colorimghero1, $colorimghero2, $colorimghero3;  */
+
+//HERO section
+@mixin hero {
+  background: linear-gradient(to left, #bbd2c5, #536976, #292e49);
+}
+
+// IMAGEN top y bottom from hero section
+@mixin triangulotop {
+  background: linear-gradient(to top, #b0dbc3, #9abcce, #5f5f64);
+}
+
+@mixin triangulobottom {
+  background: linear-gradient(to bottom, #b0dbc3, #9abcce, #5f5f64);
+}
+
+// MAIN section
+@mixin main__content {
+  background: linear-gradient(to right, #bbd2c5, #536976, #292e49);
+}
+
+//CARD section from main
+@mixin main--leftclip {
+  background: linear-gradient(to left, #bbd2c5, #536976, #292e49);
+}
+
+@mixin main--centerclip {
+  background: linear-gradient(to bottom, #bbd2c5, #536976, #292e49);
+}
+
+@mixin main--rightclip {
+  background: linear-gradient(to right, #bbd2c5, #536976, #292e49);
+}
+
+//WORK section
+@mixin work {
+  background: linear-gradient(to left, #bbd2c5, #536976, #292e49);
+}

@@ -1,0 +1,45 @@
+.caruselwrapper{
+    height: 100%;
+    width: 100%;
+    img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.booleano{
+   
+
+}
+
+.booleanointerno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    width: 600px;
+    height: 250px;
+}
+
+.img__noenvia{
+    img{
+        width: 400px;
+        height: 140px;
+    }
+}
+
+.imgfromurl{
+    
+    margin-bottom: 10px;
+    height: 200px;
+    img{
+        height: 200px;
+        width: 500px;
+    }
+}
+
+p{
+    font-size: 30px;
+    color: white;
+}

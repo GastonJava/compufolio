@@ -1,0 +1,256 @@
+<link
+  href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+
+
+
+<div class="hero">
+  <!--autoplay  --- 2022 -->
+
+  <!--
+  <video
+    id="video"
+    #video
+    [ngClass]="cambiarFondo$ ? 'position_fixed' : 'position_absolute'"
+    width="100%"
+    height="100%"
+    muted
+    loop
+  >
+    <source
+      #src
+      id="video_source"
+      src="assets/nuevohero/backgroundvideo_3mb_1980.webm"
+      type="video/webm"
+    />
+  </video>
+
+  -->
+
+  <div class="hero__contenido">
+    <div class="hero__textos">
+      <div
+
+        [ngClass]="
+          (cambiarFondo$ | async) ? 'background_video' : 'background_novideo'
+        "
+        class="hero__textosoverlay"
+      > <!-- isVideoBackground -->
+
+        <!-- 
+            -
+            -
+            -
+            testeamos nueva btton para cambiar fondo de color
+
+          -->
+
+      <!--    
+        <div class="switch">
+          <i
+            [ngClass]="cambiarFondo$ ? 'fa-video-slash' : 'fa-video'"
+            class="fas"
+            (click)="cambiarToggle()"
+            (click)="playPause()"
+          ></i>
+
+          <i
+            [ngClass]="
+            cambiarFondo$
+                ? isSunOrMoon
+                  ? 'ri-moon-fill '
+                  : 'ri-sun-line'
+                : ''
+            "
+            class=""
+            (click)="cambiarBdBackground()"
+          ></i>
+        </div>
+
+      -->
+
+        <div class="hero__textoscontainer">
+          <div class="row">
+            <main>
+              <div class="about">
+                <div class="title">
+                  <h1 class="hero__titulo">GASTON <span id="aletext">ALEJANDRO</span></h1>
+                </div>
+                
+                <!--
+                <div class="desc">
+                  <p class="hero__subtitulo">
+                    Cursando Analista de sistemas y la Segunda etapa de Argentina Programa
+                     <small>#yoprogramo</small> y lograr expandir mas mis conocimientos.
+                  </p>
+                </div>
+                -->
+
+              </div>
+
+              <div
+                [ngClass]="(cambiarFondo$ | async) ? 'card_video' : 'card_novideo'"
+                class="row row_cards hero__subtitulo"
+              >
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <div class="card card_row hero__subtitulo1">
+                        <div class="card_img">
+                          <i class="fas fa-desktop"></i>
+                        </div>
+
+                        <div class="card_front_innertitles">
+                          <div class="card_title">FRONT-END DISEÑO</div>
+                          <div class="card_body">
+                            <div id="card_body--parrafo">
+                              <p>
+                               Brindando
+                               experiencias de usuario responsive, minimalista y funcional.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flip-card-back">
+                      <!--  PARTE BACKEND CUANDO GIRA -->
+                      <div class="card card_row-reverse hero__subtitulo1">
+                        <div class="card_img">
+                          <i class="fas fa-code"></i>
+                        </div>
+
+                        <div class="card_backend_innertitles">
+                          <div class="card_title">BACK-END DEV</div>
+
+                          <div class="card_body">
+                            <div id="card_body--parrafo">
+                              <p>
+                                Desarrollo Back End Enfocado 
+                                en diseño de API's y
+                                Software escalable.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--
+              
+              <div class="girocard">
+
+                <div class="giroinner">
+
+                  <div class="card card_row hero__subtitulo1">
+                    <div class="card_img">
+                      <i class="fas fa-desktop"></i>
+                    </div>
+  
+                    <div class="card_front_innertitles">
+  
+                      <div class="card_title">FRONT-END</div>
+                      <div class="card_body">
+  
+                        <div id="card_body--parrafo">
+                          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, dicta quae exercitationem rerum sit laudantium!</p>
+                        </div>
+                        
+                      </div>
+  
+                    </div>
+  
+                  </div>
+ 
+                  <div class="card card_row-reverse hero__subtitulo1"> ----! la card del back end
+  
+                    <div class="card_img">
+                      <i class="fas fa-code"></i>
+                    </div>
+  
+                    <div class="card_backend_innertitles">
+  
+                      <div class="card_title">BACK-END</div>
+  
+                      <div class="card_body">
+                        
+                        <div id="card_body--parrafo">
+                          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, dicta quae exercitationem rerum sit laudantium!</p>
+                        </div>
+                        
+                      </div>
+  
+                    </div>
+  
+                  </div>
+
+                </div>
+
+               
+              </div>
+
+                -->
+
+                <!-- LA TARJETA CARD DE BAKEND .......................... 
+
+                <div class="card card_row-reverse hero__subtitulo1">
+
+                  <div class="card_img">
+                    <i class="fas fa-code"></i>
+                  </div>
+
+                  <div class="card_backend_innertitles">
+
+                    <div class="card_title">BACK-END</div>
+
+                    <div class="card_body">
+                      
+                      <div id="card_body--parrafo">
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, dicta quae exercitationem rerum sit laudantium!</p>
+                      </div>
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+              --></div>
+            </main>
+          </div>
+        </div>
+
+        <div class="hero__flechacontainer hero__subtitulo1">
+          <!-- <a class="hero__link"><img src="assets/nuevohero/flecha.png" alt="flecha"></a> -->
+
+          <!-- PROBANDO NUEVO BOTON -->
+          <span class="slidedown" (click)="dioClick.emit()">
+            <span class="arriba__abajo colorblanco"></span>
+          </span>
+
+          <span class="flecha"> </span>
+        </div>
+
+        <!-- <div class="hero__imgcontainer">
+        <img src="assets/nuevohero/logo1.png" alt="">
+      </div> -->
+      </div>
+      <br />
+      <!-- <div class="hero__flechacontainer">
+      <a class="hero__link"><img src="assets/nuevohero/flecha.png" alt="flecha"></a>
+
+    </div> -->
+    </div>
+  </div>
+</div>

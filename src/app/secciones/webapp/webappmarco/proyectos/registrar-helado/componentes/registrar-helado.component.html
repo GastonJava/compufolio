@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div class="grid-container">
+    <div class="registrarnav">
+      <img src="assets/proyecto/regheladoimg/creamnav.jpg" alt="HELADO FONDO" />
+      <h3>REGISTRAR HELADO</h3>
+    </div>
+
+    <div class="tipo-helado">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <form>
+              <div class="form-group row">
+                <div class="col-md-3">
+
+                  <label class="txtpre" fadeInAnimation [duration]="2" [delay]="1">CATEGORIA HELADO </label>
+                  <select (change)="onSelect($event.target.value)">  <!-- [(ngModel)]="selectedCat" -->
+                    <option *ngFor="let categoria of heladocats" value= {{categoria.heladocat_id}}>
+                        {{categoria.heladocat_nom}}
+                    </option>
+                  </select>
+                </div>
+
+                <!-- helado tipo -->
+
+                <div class="col-md-3" *ngIf="heladotipos?.length > 0">
+                  <label class="txtpre" fadeInAnimation [duration]="4" [delay]="1">TIPO DE HELADO </label>
+                  <select class="form-select" aria-label="Disabled select example">
+                    <option *ngFor="let tipo of heladotipos" value= {{tipo.heladotipo_id}}>
+                        {{tipo.heladotipo_nom}}
+                    </option>
+                  </select>
+                </div>
+                <!-- HELADO TIPO -->
+
+
+                <div class="col-md-3">
+                  <label class="txtpre" fadeInAnimation [duration]="6" [delay]="1">PRECIO</label>
+                  <input type="text" />
+                </div>
+                <div class="col-md-3">
+                  <label class="txtnom" fadeInAnimation [duration]="8" [delay]="1">NOMBRE</label>
+                  <input type="text" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn">
+        <button class="btn">ENVIAR</button>
+    </div>
+    <div class="footerbuscar">
+        <h3>BUSCAR</h3>
+    </div>
+    <div class="footererror">
+        <div class="container bg-info">
+            <p>SE ENVIO CORRECTAMENTE</p>
+        </div>
+    </div>
+    <div class="footerfiltro">
+        <h3 class="ml-3">FILTRAR</h3>
+    </div>
+  </div>
+</div>

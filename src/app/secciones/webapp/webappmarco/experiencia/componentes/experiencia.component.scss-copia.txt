@@ -1,0 +1,153 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 72vh;
+    background-color: #052F54;
+    padding: 20px;
+    .img {
+        width: 100%;
+        height: 100%;
+        background-image: url("src/assets/experiencia/fondoazuloscuro.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorabsolute{
+        background-color: transparent;
+        position: absolute;
+        width: 50%;
+        /* margin-bottom: -200px; */
+        .h1_contenedor {
+            background: transparent;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 33vw;
+            .linkaimg {
+                display: flex;
+                justify-content: flex-end;
+                align-items: normal;
+                background-color: transparent;
+                width: 400px;
+                height: 200px;
+               
+                img {
+                    position: absolute;
+                    transform: rotate(-30deg);
+                    animation-name: shake;
+                    animation-duration: 10s;
+                    animation-iteration-count:infinite;
+                    animation-fill-mode: both;
+                    top: 30px;
+                    left: 90px;
+                    width: 55px;
+                    height: 50px;
+                    
+                }
+    
+                @keyframes shake {
+                    0%, 100% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    
+                    10%, 30%, 50%, 70%, 90% {
+                        transform: translate3d(-8px, 0, 0);
+                    }
+    
+                    20%, 40%, 60%, 80% {
+                        transform: translate3d(8px, 0, 0);
+                    }
+                }
+
+                a {
+                    list-style-type: none;
+                    text-decoration: none;
+                    border: 0;
+                    color: transparent;
+                }
+            }
+
+            
+        }
+       
+         //H1
+         /* animation: escritor 1s steps(40) 5s 1 normal both,
+         textoCursor 500ms steps(40) infinite normal; */
+
+
+        /* 
+        .parpadea {
+            animation-name: parpadeo;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        } */
+
+       /*  @keyframes escritor {
+            from{width: 0;}
+            to{width: 350px;}
+        }
+
+        @keyframes textoCursor {
+            from{border-right-color: rgba(255, 255, 255, .75);}
+            to{border-right-color: transparent;}
+        } */
+
+        /* @keyframes parpadeo {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        } */
+
+        
+        /* efecto usando hls NEON NEON para el texto */
+
+
+        
+       .typewriter h1 {
+         color: grey;
+         font-family: 'Gluten', cursive;
+         border-right: .12em solid blue; /* The typwriter cursor */
+         margin: 0 auto;
+         letter-spacing: .12em; /* Adjust as needed */
+         overflow: hidden;
+         font-size: 50px;
+         transform: rotate(-8deg);
+         text-transform:uppercase;
+         white-space: nowrap;        
+         background-color: transparent;
+         animation: 
+         typing 3.0s steps(30, end),
+         blink-caret .5s step-end infinite;
+         line-height: 0.8;
+        }
+
+        .typewriter h1:hover {
+            color: cornflowerblue;
+        }
+  
+        /* The typing effect */
+        @keyframes typing {
+         from { width: 0 }
+         to { width: 100% }
+        }
+  
+         /* The typewriter cursor effect */
+        @keyframes blink-caret {
+         from, to { border-color: transparent }
+         50% { border-color: blue }
+        }
+  
+  
+
+
+    }
+   
+}

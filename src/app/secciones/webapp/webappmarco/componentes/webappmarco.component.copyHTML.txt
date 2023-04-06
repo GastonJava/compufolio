@@ -1,0 +1,177 @@
+<span [ngClass]="(isVideoPlaying$ | async) ?  'testing_glass' : 'testing_noglass' " class="testing"></span>
+<div
+  #anchodiv
+  class="container-fluid continterno"
+  id="webapp"
+  (window:resize)="onResize($event)">
+  
+  <div class="row alt1">
+    
+    <div
+      class="btnsobre_iconbutton"
+      (click)="_toggleSidebar()"
+      #btn_zindex
+      #opacidad
+    >
+      <!-- #opacidad -->
+
+      <!-- [@sidebaranimacion]="estado" -->
+      <!-- [@changeState]="state"  -->
+
+      <div class="linea" [@changeState]="!esNormal ? 'normal' : 'topX'"></div>
+      <div
+        class="linea"
+        [@changeState]="!esNormal ? 'normal' : 'escondido'"
+      ></div>
+      <div
+        class="linea"
+        [@changeState]="!esNormal ? 'normal' : 'bottomX'"
+      ></div>
+    </div>
+
+    <div [ngClass]="(toggle$ | async) ? 'alturaform_novideo' : 'alturaform_video'" class="col alturaform" #aszindex>
+      <!-- <small class="bg-danger text-success">ES SIDEBAR ABRIERTO???: {{_opened}}</small>
+      <br>
+      <small class="bg-danger text-success">ESCONDER EL FORMULARIO???: {{hiddenForm}}</small> -->
+      <div class="form">
+        <div class="insideform">
+          <form [ngClass]="hiddenForm ? 'form_open' : 'form_close'" [formGroup]="form" method="post" (ngSubmit)="enviar()">
+            <!-- <small class="bg-danger text-success">ES VIDEO PLAYING???: {{isVideoPlaying}}</small>
+            <small class="bg-danger text-success">ES LA FLECHA MOSTRANDOSE???: {{isFlechaHidden}}</small> -->
+            <h2 class="text-center">CONTACTO</h2>
+            <div class="form-group">
+              <!--   <label for="email" class="pl-2 font-weight-bold"
+                >Ingresa email</label
+              > -->
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Enter email"
+                [formControl]="email"
+                required
+              />
+
+              <span *ngIf="email.invalid && (email.dirty || email.touched)" [ngClass]="(isSunOrMoon$ | async) ? 'span_sun' : 'span_moon'"> Ingresar email valido</span>
+            </div>
+
+            <div class="form-group">
+              <!-- <label for="textarea" class="font-weight-bold"
+                >Escribe algo</label
+              > -->
+
+              <textarea
+                type="text"
+                class="form-control"
+                id="textarea"
+                placeholder="Escribeme algo"
+                [formControl]="mensaje"
+                maxlength="100"
+                required
+              ></textarea>
+              <span
+              *ngIf="mensaje.invalid && (mensaje.dirty || mensaje.touched)"
+               [ngClass]="(isSunOrMoon$ | async) ? 'span_sun' : 'span_moon'">Ingresa un mensaje</span>
+            </div>
+
+            <!-- <button (click) = "enviarMail()" type="submit" class="submit btn w-100">ENVIAR</button> -->
+            <button
+              [disabled]="isLoading"
+              type="submit"
+              class="submit btn w-100"
+            >
+              ENVIAR
+            </button>
+            <input [formControl]="honeypot" class="hidden" type="text" />
+
+            <div
+              [ngClass]="!enviado ? 'hidden' : 'visible'"
+              class="center-text"
+            >
+              <span>{{ mensajeRespuesta }}</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-8 alturasobremi">
+      <!--   -->
+      <!-- AQUI ADENTRO VA EL ROUTER OUTLET -->
+      <!-- <main [@routerAnimations]="prepareRoute(outlet)" class="content"> -->
+
+      <!-- probar -->
+      <div class="rouleter">
+        <div class="display_router_phone">
+          <ng-template [ngIf]="_mostrar">
+            <ng-container>
+              <!-- ADENTRO VA EL SIDEBAR TEMPLATE  -->
+
+              <ng-sidebar-container #asclasefondo>
+
+                <ng-sidebar
+                  [closeOnClickOutside]="false"
+                  [animate]="true"
+                  [showBackdrop]="false"
+                  [(opened)]="_opened"
+                  #sidebar
+                >
+                 
+
+
+
+                  <div
+                    class="outlet-container"
+                    [@transiciones]="prepareRoute(outlet)"
+                  >
+                    <!--[@transform] = "prepareRoute(outlet)"
+                  [@fader]="prepareRoute(outlet)"
+                  [@slider] = "prepareRoute(outlet)"
+                  [@transiciones] = "prepareRoute(outlet)"
+                  [@cambioRuta] = "prepareRoute(outlet)"
+                  [@routerTransition] = "prepareRoute(outlet)" -->
+
+                    <router-outlet #outlet="outlet"></router-outlet>
+                  </div>
+
+            
+
+
+                </ng-sidebar>
+              </ng-sidebar-container>
+
+              <!-- ADENTRO VA EL SIDEBAR TEMPLATE  -->
+
+              <br /><br />
+            </ng-container>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+
+    <div class="contbarraint">
+      <h4 id="sobre">
+        <a routerLink="sobremi" routerLinkActive="active">SOBRE MI</a>
+      </h4>
+
+      <h4 id="proyecto">
+        <a routerLink="project" routerLinkActive="active">PROYECTOS</a>
+      </h4>
+
+      <h4 id="skill">
+        <a routerLink="skills" routerLinkActive="active">SKILLS</a>
+      </h4>
+
+      <h4 id="exp">
+        <!-- <a routerLink="under" routerLinkActive="active">underconstruction</a> -->
+        <a routerLink="under" routerLinkActive="active">DESCARGAR CV</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+ <!-- flecha deslizar arriba-->
+ <div 
+ (click)="dioClickFlecha.emit()"
+ [ngClass]="(isFlechaHidden$ | async) ? 'flecha_esconder' : 'flecha_mostrar'"
+ class="flecha bg-danger"><i class="ri-arrow-up-fill"></i></div>
