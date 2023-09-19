@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NuevoheroComponent } from './nuevohero.component';
 import { NuevoheroRoutes } from './nuevohero.routing';
-import { ParticlesModule } from 'angular-particle';
+
 
 @NgModule({
   imports: [
@@ -10,6 +10,7 @@ import { ParticlesModule } from 'angular-particle';
     NuevoheroRoutes,
     
   ],
-declarations: [/*NuevoheroComponent */]
+declarations: [NuevoheroComponent ],
+exports: [NuevoheroComponent]
 })
 export class NuevoheroModule {}

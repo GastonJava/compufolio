@@ -26,7 +26,6 @@ import { WebappmarcoModule } from './secciones/webapp/webappmarco/webappmarco.mo
 import { AppRoutingModule } from './app-routing.module';
 import { TestingheroComponent } from './secciones/testinghero/testinghero.component';
 import { NuevoheroModule } from './secciones/nuevohero/nuevohero.module';
-import { NgParticlesModule } from 'ng-particles';
 import { BotonswitchModule } from './secciones/botonswitch/botonswitch.module';
 //import { ParticlesModule } from 'angular-particle';
 
@@ -39,7 +38,6 @@ import { BotonswitchModule } from './secciones/botonswitch/botonswitch.module';
     TextobtnDirective,
     NavbarComponent,
     HeroComponent,
-    NuevoheroComponent, 
     MainComponent,
     WorkComponent,
     DinamicoHostDirective,
@@ -58,19 +56,15 @@ import { BotonswitchModule } from './secciones/botonswitch/botonswitch.module';
     AppRoutingModule, 
 
   
-    /* BrowserModule, */
+
     CommonModule,
     FormsModule,
     ReactiveFormsModule, 
-    
-    /* NoopAnimationsModule, */
-    NgParticlesModule,
+
     WebappmarcoModule,
 
     BotonswitchModule,
-    /* MainNuevoModule, */
-    /* WebappModule, */
-    
+    NuevoheroModule
   ],
   
   providers: [],

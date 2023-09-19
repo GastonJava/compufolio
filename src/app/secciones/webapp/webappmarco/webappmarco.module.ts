@@ -13,7 +13,7 @@ import { ProjectModule } from './project/project.module';
 import { ProyectosModule } from './proyectos/proyectos.module';
 import { SkillsModule } from './skills/skills.module';
 import { SobremiModule } from './sobremi/sobremi.module';
-import { BotonswitchModule } from '../../botonswitch/botonswitch.module';
+
 
 @NgModule({
   declarations: [WebappmarcoComponent],
@@ -30,7 +30,7 @@ import { BotonswitchModule } from '../../botonswitch/botonswitch.module';
     ProyectosModule,
     SkillsModule,
     SobremiModule,
-    BotonswitchModule
+    
     
   ],
  
