@@ -42,10 +42,10 @@ import { DevuelveEstadoVideoService } from "src/app/secciones/nuevohero/servicio
 export class SobremiComponent implements OnInit {
 
   /** async pipes variables */
-  isSunMoon$: Observable<boolean>;
-  isVideo$: Observable<Boolean>;
+  isSunMoon$!: Observable<boolean>;
+  isVideo$!: Observable<Boolean>;
 
-  isVideo: Boolean; // toggle del background
+  isVideo!: Boolean; // toggle del background
 
   constructor(
     private resolver: ComponentFactoryResolver,
@@ -58,7 +58,7 @@ export class SobremiComponent implements OnInit {
   is_over = false;
 
   //TOGGLE DE CAMBIAR BACKGROUND DE LUNA Y SOL
-  isSunMoon: boolean;
+  isSunMoon!: boolean;
   
   private _opened: boolean = false; 
 
