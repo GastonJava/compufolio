@@ -60,8 +60,7 @@ const routes: Routes = [
     imports: [
         RouterModule.forRoot(routes, {
     /* preloadingStrategy: PreloadAllModules, */
-    anchorScrolling: 'disabled',
-    relativeLinkResolution: 'legacy'
+    anchorScrolling: 'disabled'
 })
     ],
 
