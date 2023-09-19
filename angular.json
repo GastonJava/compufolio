@@ -138,7 +138,6 @@
       }
     }
   },
-  "defaultProject": "mi-pagina-web-angular",
   "schematics": {
     "@schematics/angular": {
       "component": {

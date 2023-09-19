@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, HostListener, OnDestroy, OnInit, Output, Renderer2, ViewChild, ViewEncapsulation } from "@angular/core";
-import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from "@angular/forms";
 import { EmailService } from "../servicios/email.service";
 import { animate, trigger, state, style, transition, query, stagger } from '@angular/animations';
 import { animacion_sidebar, left, right, slideInOutAnimation } from "../animaciones/animaciones";
@@ -101,14 +101,14 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
 
   /* FORMULARIO */
 
-  nodeMailerForm: FormGroup;
+  nodeMailerForm: UntypedFormGroup;
 
   /* inputs: FormGroup; */
   mensajeRespuesta: string; 
-  form: FormGroup;
-  email: FormControl = new FormControl("", [Validators.required]);
-  mensaje: FormControl = new FormControl("", [Validators.required]);
-  honeypot: FormControl = new FormControl();
+  form: UntypedFormGroup;
+  email: UntypedFormControl = new UntypedFormControl("", [Validators.required]);
+  mensaje: UntypedFormControl = new UntypedFormControl("", [Validators.required]);
+  honeypot: UntypedFormControl = new UntypedFormControl();
   isLoading: boolean = false;
   enviado: boolean = false;
  
@@ -127,7 +127,7 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
   constructor(
     private render: Renderer2,
     private http: HttpClient,
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     private emalservice: EmailService,
     private cd: ChangeDetectorRef,
     private stateserv: BackgroundToggleService,

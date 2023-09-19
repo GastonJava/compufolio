@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from "@angular/animations";
-import { NONE_TYPE } from "@angular/compiler/src/output/output_ast";
+
 import { Component, ComponentFactoryResolver, OnInit, ViewContainerRef, ViewChild, ChangeDetectionStrategy } from "@angular/core";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
