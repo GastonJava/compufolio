@@ -2,6 +2,7 @@
 
 .hintrc
 cache/
+/.angular/cache
 
 # compiled output
 /dist

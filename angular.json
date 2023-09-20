@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mi-pagina-web-angular": {
+    "compufolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mi-pagina-web-angular",
+            "outputPath": "dist/compufolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,11 +71,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mi-pagina-web-angular:build"
+            "browserTarget": "compufolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mi-pagina-web-angular:build:production"
+              "browserTarget": "compufolio:build:production"
             }
           }
 
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mi-pagina-web-angular:build"
+            "browserTarget": "compufolio:build"
           }
         },
         "test": {
@@ -123,17 +123,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mi-pagina-web-angular:serve"
+            "devServerTarget": "compufolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mi-pagina-web-angular:serve:production"
+              "devServerTarget": "compufolio:serve:production"
             }
           }
         },
         "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {}
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
