@@ -77,12 +77,12 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
   public dioClickFlecha: EventEmitter<void> = new EventEmitter();
 
   //========= is video playing? ==========
-  isVideoPlaying: boolean;
+  isVideoPlaying!: boolean;
 
   isHamburguer = true;
 
   //========= esconder el formulario display:none
-  hiddenForm: boolean;
+  hiddenForm!: boolean;
 
   //===== variables del input form
   getemail: any;
@@ -92,19 +92,19 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
   _animate: boolean = true;
   esNormal = true;
 
-  @ViewChild('fondoside') fondo: ElementRef;
-  @ViewChild('asclasefondo') clase_fondo: ElementRef;
-  @ViewChild('aszindex') z_index: ElementRef;
-  @ViewChild('btn_zindex') btn_zindex: ElementRef;
-  @ViewChild('opacidad') opacidad: ElementRef;
-  @ViewChild('anchodiv') anchoDiv: ElementRef;
+  @ViewChild('fondoside') fondo!: ElementRef;
+  @ViewChild('asclasefondo') clase_fondo!: ElementRef;
+  @ViewChild('aszindex') z_index!: ElementRef;
+  @ViewChild('btn_zindex') btn_zindex!: ElementRef;
+  @ViewChild('opacidad') opacidad!: ElementRef;
+  @ViewChild('anchodiv') anchoDiv!: ElementRef;
 
   /* FORMULARIO */
 
-  nodeMailerForm: UntypedFormGroup;
+  nodeMailerForm!: UntypedFormGroup;
 
   /* inputs: FormGroup; */
-  mensajeRespuesta: string; 
+  mensajeRespuesta!: string; 
   form: UntypedFormGroup;
   email: UntypedFormControl = new UntypedFormControl("", [Validators.required]);
   mensaje: UntypedFormControl = new UntypedFormControl("", [Validators.required]);
@@ -113,16 +113,16 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
   enviado: boolean = false;
  
   /** ASYNC PIPE VARIABLES */
-  toggle$: Observable<Boolean>;
-  isVideoPlaying$: Observable<boolean>;
-  isSunOrMoon$: Observable<boolean>;
-  isFlechaHidden$: Observable<boolean>;
+  toggle$!: Observable<Boolean>;
+  isVideoPlaying$!: Observable<boolean>;
+  isSunOrMoon$!: Observable<boolean>;
+  isFlechaHidden$!: Observable<boolean>;
 
-  isVideo: Boolean;
-  isSunOrMoon: boolean;
+  isVideo!: Boolean;
+  isSunOrMoon!: boolean;
 
   // =========== isFlechaHidden
-  isFlechaHidden: boolean;
+  isFlechaHidden!: boolean;
 
   constructor(
     private render: Renderer2,
@@ -281,11 +281,11 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
       this.form.disable();
 
       var formData: any = new FormData();
-      formData.append("email", this.form.get("email").value);
-      formData.append("mensaje", this.form.get("mensaje").value);
+      formData.append("email", this.form.get("email")!.value);
+      formData.append("mensaje", this.form.get("mensaje")!.value);
 
       /* this.http.post("https://script.google.com/macros/s/AKfycbzoTqbsA5YaOcu6-rtvf6me_0dCNfI5VsX2GtaB/exec ", formData).subscribe((response) => { */
-      this.http.post("https://formspree.io/f/mgerpvve", formData).subscribe((response) => {
+      this.http.post("https://formspree.io/f/mgerpvve", formData).subscribe((response: any) => {
         if(response["result"] == "success"){
           this.mensajeRespuesta = "Gracias por enviar el mensaje";
         }else{
@@ -367,7 +367,7 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
   /* TAMAÑO DE PANTALLA ANCHO */
  
   @HostListener('window:resize', ['$event'])
-   onResize(event) {
+   onResize(event: any) {
     this.ancho = event.target.innerWidth;
     if(this.ancho > 980){
         console.log("mayor a 850px");
@@ -396,7 +396,7 @@ export class WebappmarcoComponent implements OnInit, OnDestroy {
     this.flechaServ._flechastate.unsubscribe(); */
 
     this.cd.detach();
-    if(!this.cd['destroyed']) {
+    if(!this.cd.detach) {
       this.cd.detectChanges();
   
     }

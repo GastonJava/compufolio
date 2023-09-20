@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
 })
 export class SinEstadoInicialService {
 
-  bgtoggle: boolean;
+  bgtoggle!: boolean;
 
   public _backgroundtoggle = new Subject<boolean>();
 

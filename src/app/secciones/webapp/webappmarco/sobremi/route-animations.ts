@@ -16,7 +16,7 @@ import { Trigger } from 'ngx-bootstrap/utils';
   return q(s, a, o);
 }; */ /* export const query = (s,a,o = {optional:true}) => q (s, a, o); */
 
-export function query(s, a) {
+export function query(s: any, a: any) {
   return q(s, a, {optional: true});
 }
 

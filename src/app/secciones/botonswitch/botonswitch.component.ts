@@ -13,11 +13,11 @@ import { SinEstadoInicialService } from '../nuevohero/servicios/sinEstadoInicial
 export class BotonswitchComponent implements OnInit {
 
 
-  @ViewChild('video') video: ElementRef;
+  @ViewChild('video') video!: ElementRef;
 
   //ASYNC PIPE VARIABLE
-  bgToggle$: Observable<Boolean>;
-  state$: Observable<State>
+  bgToggle$!: Observable<Boolean>;
+  state$!: Observable<State>
 
   public isVideoBackground: Boolean = false; // TRUE -- 2022
   public isSunOrMoon: boolean = true;

@@ -14,11 +14,11 @@ import { BackgroundToggleService } from 'src/app/secciones/nuevohero/servicios/b
 export class ProjectComponent implements OnInit {
 
   /** ASYNC PIPES VARIABLES */
-  isVideo$: Observable<Boolean>;
+  isVideo$!: Observable<Boolean>;
 
-  isVideo: Boolean;
+  isVideo!: Boolean;
 
-  slidesEmp: [];
+  slidesEmp!: [];
   constructor(
     private renderer: Renderer2,
     private elem: ElementRef,
@@ -37,9 +37,9 @@ export class ProjectComponent implements OnInit {
     */
   }
 
-  @ViewChild('wrapper') wrapper: ElementRef;
-  @ViewChild('parrafo') parrafo: ElementRef;
-  @ViewChild('over') over: ElementRef;
+  @ViewChild('wrapper') wrapper!: ElementRef;
+  @ViewChild('parrafo') parrafo!: ElementRef;
+  @ViewChild('over') over!: ElementRef;
 
   /*
   @HostListener('mouseover') onMouseOver() {
@@ -53,7 +53,7 @@ export class ProjectComponent implements OnInit {
     {src: 'assets/proyecto/cineyapp_peliculadetalle.png'},
   ]
 
-  identify(index, slides){
+  identify(index: number, slides: any){
     this.slidesEmp = slides;
     return this.slidesEmp;
   }

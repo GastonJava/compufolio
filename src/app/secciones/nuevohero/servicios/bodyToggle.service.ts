@@ -11,7 +11,7 @@ const INITIAL_STATE: BackgorundToggleState = {
 })
 export class BodyToggleService {
 
-  bdtoggle: boolean;
+  bdtoggle!: boolean;
 
   public _bodytoggle = new BehaviorSubject<BackgorundToggleState>(INITIAL_STATE);
   bodyToggle$ = this._bodytoggle.asObservable();

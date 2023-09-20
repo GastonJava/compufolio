@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 const INITIAL_STATE: State = {
-  bgToggle: undefined
+  bgToggle: false
 };
 
 @Injectable({

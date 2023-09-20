@@ -10,7 +10,7 @@ export class mousovercarouselDirective {
 
     /* @Input('hover-class') hoverClass:any; */
 
-    @ViewChild('parrafo') wrapper: ElementRef;
+    @ViewChild('parrafo') wrapper!: ElementRef;
 
     @HostListener('mouseover') onMouseOver() {
         /* console.log("hola soy la directiva!!!");

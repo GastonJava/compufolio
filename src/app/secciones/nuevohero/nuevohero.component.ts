@@ -23,17 +23,17 @@ export class NuevoheroComponent implements OnInit {
   public dioClick: EventEmitter<void> = new EventEmitter();
 
   /** ================ video player ======== */
-  @ViewChild('video') video: ElementRef;
-  @ViewChild('src') src: ElementRef;
+  @ViewChild('video') video!: ElementRef;
+  @ViewChild('src') src!: ElementRef;
   isPlay: boolean = false;
 
   toggleVideo(event: any) {
     this.video.nativeElement.play();
   }
 
-  bgToggle$: Observable<Boolean>;
-  state$: Observable<State>;
-  cambiarFondo$: Observable<boolean>;
+  bgToggle$!: Observable<Boolean>;
+  state$!: Observable<State>;
+  cambiarFondo$!: Observable<boolean>;
 
   public isVideoBackground: Boolean = false; // TRUE -- 2022
   public isSunOrMoon: boolean = true;

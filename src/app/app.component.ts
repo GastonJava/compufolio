@@ -28,13 +28,10 @@ export class AppComponent {
   id = "tsparticles";
 
   // BOLEANO PIPE OBSERVABLE
-  isVideo$: Observable<Boolean>;
+  isVideo$!: Observable<Boolean>;
 
   // variable para cambiar de valores al presionar el toggle superior
   cantparticles: number = 50;
-
-
-
 
   /* CARGANDO CIRCULO */
   public showOverlay = true;
@@ -44,20 +41,20 @@ export class AppComponent {
 
   over: boolean = false;
 
-  public bdback: boolean;
+  public bdback!: boolean;
 
   //========== contador de veces quellega al bottom
   counter: number = 0;
   currentRoute: any;
 
   //======================= boolean flecha is hidden
-  isFlechaHidden: boolean;
+  isFlechaHidden!: boolean;
 
   // ====================== variable body
-  @ViewChild('body') body: ElementRef;
+  @ViewChild('body') body!: ElementRef;
 
-  @ViewChild("btncontainer", { static: true }) btncontainer: ElementRef;
-  @ViewChild("textobtn", { static: true }) textobtn: ElementRef;
+  @ViewChild("btncontainer", { static: true }) btncontainer!: ElementRef;
+  @ViewChild("textobtn", { static: true }) textobtn!: ElementRef;
 
   constructor(
 

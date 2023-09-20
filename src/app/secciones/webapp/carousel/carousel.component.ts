@@ -33,7 +33,7 @@ import { fadeIn, fadeOut, jackIn, scaleIn, scaleOut } from './animacion_carusel'
 })
 export class CarouselComponent {
 
-  @Input() slides;
+  @Input() slides!: any;
 
   currentSlide = 0;
  /* intervalo = setInterval(this.onPreviousClick, 1500); */
@@ -105,7 +105,7 @@ export class CarouselComponent {
   }
 
   /* REDIRIGIENDO A EXTERNO */
-  link(index){
+  link(index: number){
 
     console.log("click en el link: "+index);
 

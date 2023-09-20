@@ -8,7 +8,7 @@ export class EmailService {
 
   constructor(private http: HttpClient ) { }
 
-  enviarMensaje(body){
+  enviarMensaje(body: any){
     let headers = {
       headers: new HttpHeaders({
         'Content-Type' : 'application/json'
